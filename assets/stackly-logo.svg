@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 64" fill="none">
+  <g transform="translate(0 0)" fill="currentColor">
+    <path d="M38.7 4 12 34.5h17.2L23.8 60 52 27.1H34.8L38.7 4Z"/>
+  </g>
+  <text x="69" y="44" fill="currentColor"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="32" font-weight="800" letter-spacing="-1.4">STACKLY</text>
+</svg>

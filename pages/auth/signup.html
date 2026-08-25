@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#062d37">
+<title>Stackly — Create your account</title>
+<meta name="description" content="Create a Stackly account and start a connected care journey designed around real life.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page signup" data-auth-mode="signup">
+<header class="auth-brand-bar">
+  <a class="auth-brand" href="../../index.html" aria-label="Stackly home"><img src="../../assets/stackly-logo.svg" alt="Stackly"></a>
+  <a class="auth-back" href="../../index.html"><i class="fa-solid fa-arrow-left"></i><span>Back to Stackly</span></a>
+</header>
+<main class="auth-shell">
+  <section class="auth-visual" aria-label="Stackly care journey overview">
+    <div class="auth-visual-inner">
+      <p class="auth-eyebrow" data-aos="fade-up"><span></span> START WITH CLARITY</p>
+      <h1 data-aos="fade-up" data-aos-delay="70">A simpler start<br>to <em>better care.</em></h1>
+      <p class="auth-visual-copy" data-aos="fade-up" data-aos-delay="130">Create your account once. Then find the right doctor, choose a time and keep what happens next connected.</p>
+      <div class="auth-proof-row" data-aos="fade-up" data-aos-delay="180">
+        <span class="auth-proof"><i class="fa-solid fa-user-doctor"></i> 120+ specialists</span>
+        <span class="auth-proof"><i class="fa-solid fa-star"></i> 4.9/5 patient rating</span>
+        <span class="auth-proof"><i class="fa-solid fa-video"></i> Secure video care</span>
+      </div>
+      <div class="auth-orbit-card" data-aos="fade-up" data-aos-delay="230">
+        <div class="auth-card-top"><span>YOUR FIRST JOURNEY</span><span class="auth-live"><i></i> BUILT AROUND YOUR DAY</span></div>
+        <div class="auth-care-row"><div class="auth-care-icon"><i class="fa-solid fa-route"></i></div><div><small>Four clear moments</small><strong>Find → Book → Connect</strong><p>Start with what you need today. Stackly keeps the next step visible.</p></div></div>
+        <div class="auth-progress" aria-label="Four step care journey"><span class="is-active"></span><span class="is-active"></span><span class="is-active"></span><span></span></div>
+      </div>
+    </div>
+  </section>
+  <section class="auth-panel">
+    <div class="auth-form-wrap">
+      <div class="auth-form-head" data-aos="fade-up">
+        <p class="auth-form-kicker">CREATE ACCOUNT</p>
+        <h2>Start your<br><em>care journey.</em></h2>
+        <p>Set up your Stackly account in a minute. Your care preferences can be added after you sign in.</p>
+      </div>
+      <div class="auth-form-card" data-aos="fade-up" data-aos-delay="80">
+        <form class="auth-form" data-auth-form novalidate>
+          <div class="auth-field">
+            <label for="name">Full name</label>
+            <input class="auth-input" id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" required>
+            <p class="auth-field-error auth-helper" aria-live="polite"></p>
+          </div>
+          <div class="auth-field">
+            <label for="email">Email address</label>
+            <input class="auth-input" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <p class="auth-field-error auth-helper" aria-live="polite"></p>
+          </div>
+          <div class="auth-field">
+            <label for="password">Password</label>
+            <div class="auth-input-wrap"><input class="auth-input" id="password" name="password" type="password" autocomplete="new-password" placeholder="Create a strong password" required><button class="auth-password-toggle" type="button" data-password-toggle="password" aria-label="Show password"><i class="fa-solid fa-eye"></i></button></div>
+            <div class="auth-strength" data-password-strength data-level="0"><div class="auth-strength-bars"><span></span><span></span><span></span><span></span></div><span class="auth-strength-label" data-strength-label></span></div>
+            <p class="auth-helper">6+ characters · 1 uppercase · 1 number · 1 special character</p>
+            <p class="auth-field-error auth-helper" aria-live="polite"></p>
+          </div>
+          <div class="auth-field">
+            <label for="confirm-password">Confirm password</label>
+            <div class="auth-input-wrap"><input class="auth-input" id="confirm-password" name="confirm-password" type="password" autocomplete="new-password" placeholder="Repeat your password" required><button class="auth-password-toggle" type="button" data-password-toggle="confirm-password" aria-label="Show password"><i class="fa-solid fa-eye"></i></button></div>
+            <p class="auth-field-error auth-helper" aria-live="polite"></p>
+          </div>
+          <div class="auth-terms-wrap"><label class="auth-check"><input id="terms" type="checkbox" required><span>I agree to the <button class="auth-legal-button" type="button" data-legal-open="terms">Terms</button> and <button class="auth-legal-button" type="button" data-legal-open="privacy">Privacy Policy</button>.</span></label><p class="auth-field-error auth-terms-error" aria-live="polite"></p></div>
+          <p class="auth-message" aria-live="polite"></p>
+          <button class="auth-submit" type="submit">Create account <span>↗</span></button>
+        </form>
+        <p class="auth-switch">Already have an account? <a href="login.html">Log in ↗</a></p>
+      </div>
+    </div>
+  </section>
+  <dialog class="auth-dialog" data-legal-dialog="terms" aria-labelledby="terms-title">
+    <div class="auth-dialog-card"><button class="auth-dialog-close" type="button" data-legal-close aria-label="Close terms"><i class="fa-solid fa-xmark"></i></button><p class="auth-form-kicker">STACKLY TERMS</p><h3 id="terms-title">Terms of use.</h3><p>Use Stackly to explore care information, manage your account and connect with care professionals. Account details should be kept accurate and secure.</p><button class="auth-submit" type="button" data-legal-close>Close</button></div>
+  </dialog>
+  <dialog class="auth-dialog" data-legal-dialog="privacy" aria-labelledby="privacy-title">
+    <div class="auth-dialog-card"><button class="auth-dialog-close" type="button" data-legal-close aria-label="Close privacy policy"><i class="fa-solid fa-xmark"></i></button><p class="auth-form-kicker">STACKLY PRIVACY</p><h3 id="privacy-title">Privacy by design.</h3><p>Stackly is designed around purposeful account information and a clear care journey. Only provide information you are comfortable sharing through the appropriate account flow.</p><button class="auth-submit" type="button" data-legal-close>Close</button></div>
+  </dialog>
+</main>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>
