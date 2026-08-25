@@ -1,0 +1,24 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Dependencies
+node_modules/
+
+# Build / tooling
+dist/
+build/
+.cache/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp

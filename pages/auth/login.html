@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<title>Stackly — Log in</title>
+<meta name="description" content="Log in to Stackly and continue your connected care journey.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+<link rel="stylesheet" href="../../css/variables.css">
+<link rel="stylesheet" href="auth.css">
+</head>
+<body class="auth-page login" data-auth-mode="login">
+<header class="auth-brand-bar">
+  <a class="auth-brand" href="../../index.html" aria-label="Stackly home">
+    <img src="../../assets/stackly-logo.svg" alt="Stackly">
+  </a>
+  <a class="auth-back" href="../../index.html"><i class="fa-solid fa-arrow-left"></i><span>Back to Stackly</span></a>
+</header>
+
+<main class="auth-shell">
+  <section class="auth-visual" aria-label="Stackly connected care overview">
+    <div class="auth-visual-orb auth-visual-orb-one" aria-hidden="true"></div>
+    <div class="auth-visual-orb auth-visual-orb-two" aria-hidden="true"></div>
+    <div class="auth-visual-inner">
+      <p class="auth-eyebrow" data-aos="fade-up"><span></span> WELCOME BACK</p>
+      <h1 data-aos="fade-up" data-aos-delay="70">Your care,<br><em>still connected.</em></h1>
+      <p class="auth-visual-copy" data-aos="fade-up" data-aos-delay="130">Pick up where you left off. Your appointments, care plans and next steps stay in one calm place.</p>
+
+      <div class="auth-proof-row" data-aos="fade-up" data-aos-delay="180">
+        <span class="auth-proof"><i class="fa-solid fa-shield-heart"></i> Private by design</span>
+        <span class="auth-proof"><i class="fa-solid fa-link"></i> Connected care</span>
+        <span class="auth-proof"><i class="fa-solid fa-clock"></i> Flexible access</span>
+      </div>
+
+      <div class="auth-orbit-card" data-aos="fade-up" data-aos-delay="230">
+        <div class="auth-card-top"><span>CARE HOME</span><span class="auth-live"><i></i> READY WHEN YOU ARE</span></div>
+        <div class="auth-care-row">
+          <div class="auth-care-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+          <div>
+            <small>Next best step</small>
+            <strong>Continue your care</strong>
+            <p>Review your plan, check your next appointment or speak with a trusted doctor.</p>
+          </div>
+        </div>
+        <div class="auth-progress" aria-hidden="true"><span class="is-active"></span><span class="is-active"></span><span></span><span></span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="auth-panel" aria-labelledby="login-title">
+    <div class="auth-form-wrap">
+      <div class="auth-form-head" data-aos="fade-up">
+        <p class="auth-form-kicker">SIGN IN</p>
+        <h2 id="login-title">Good to see<br>you <em>again.</em></h2>
+        <p>Log in to keep your appointments, care plans and follow-ups moving.</p>
+      </div>
+
+      <div class="auth-form-card" data-aos="fade-up" data-aos-delay="80">
+        <form class="auth-form" data-auth-form novalidate>
+          <div class="auth-field">
+            <div class="auth-label-row"><label for="email">Email address</label></div>
+            <input class="auth-input" id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            <p class="auth-field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="auth-field">
+            <div class="auth-label-row"><label for="password">Password</label><button class="auth-inline-button" type="button" data-recovery-open>Forgot password?</button></div>
+            <div class="auth-input-wrap">
+              <input class="auth-input" id="password" name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+              <button class="auth-password-toggle" type="button" data-password-toggle="password" aria-label="Show password"><i class="fa-solid fa-eye"></i></button>
+            </div>
+            <p class="auth-field-error" aria-live="polite"></p>
+          </div>
+
+          <div class="auth-field">
+            <div class="auth-label-row"><label>Continue as</label><span class="auth-role-required">Required</span></div>
+            <div class="auth-role-grid">
+              <div class="auth-role">
+                <input id="patient" type="radio" name="role" value="patient">
+                <label for="patient"><i class="fa-solid fa-user"></i><span>Patient<small>Book and manage care</small></span><b>↗</b></label>
+              </div>
+              <div class="auth-role">
+                <input id="provider" type="radio" name="role" value="provider">
+                <label for="provider"><i class="fa-solid fa-user-doctor"></i><span>Care professional<small>Manage your practice</small></span><b>↗</b></label>
+              </div>
+            </div>
+            <p class="auth-field-error auth-role-error" aria-live="polite"></p>
+          </div>
+
+          <p class="auth-message" aria-live="polite"></p>
+          <button class="auth-submit" type="submit">Log in <span>↗</span></button>
+        </form>
+
+        <div class="auth-divider"><span>SECURE ACCESS</span></div>
+        <p class="auth-switch">New to Stackly? <a href="signup.html">Create an account <span>↗</span></a></p>
+        <p class="auth-mini-note"><i class="fa-solid fa-lock"></i> Role selection decides which dashboard opens after a successful sign in.</p>
+      </div>
+
+      <p class="auth-panel-foot">© 2026 Stackly <span>•</span> Connected care, thoughtfully designed.</p>
+    </div>
+
+    <dialog class="auth-dialog" data-recovery-dialog aria-labelledby="recovery-title">
+      <div class="auth-dialog-card">
+        <button class="auth-dialog-close" type="button" data-recovery-close aria-label="Close password recovery"><i class="fa-solid fa-xmark"></i></button>
+        <p class="auth-form-kicker">ACCOUNT ACCESS</p>
+        <h3 id="recovery-title">Reset your password.</h3>
+        <p>Enter the email associated with your Stackly account. This frontend demo will validate the address and show the next step.</p>
+        <form class="auth-recovery-form" data-recovery-form novalidate>
+          <label for="recovery-email">Email address</label>
+          <input class="auth-input" id="recovery-email" type="email" autocomplete="email" placeholder="you@example.com" required>
+          <p class="auth-message" data-recovery-message aria-live="polite"></p>
+          <button class="auth-submit" type="submit">Continue <span>↗</span></button>
+        </form>
+      </div>
+    </dialog>
+  </section>
+</main>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>

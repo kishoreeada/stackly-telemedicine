@@ -1,0 +1,27 @@
+:root{
+  --ink:#082f3a;
+  --teal:#117f94;
+  --teal-deep:#0b6678;
+  --surface:#f5fafb;
+  --white:#ffffff;
+  --line:#d8e6e8;
+  --muted:#6e858c;
+  --footer:#071b22;
+  --footer-line:rgba(166,216,222,.16);
+  --footer-muted:#9db7bd;
+  --display:"Manrope","DM Sans",ui-sans-serif;
+  --accent:#9fd6dc;
+  --ease:cubic-bezier(.22,.75,.2,1);
+  --ease-out:cubic-bezier(.16,1,.3,1);
+  --max:1440px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);background:var(--surface);font-family:"DM Sans",ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body.menu-open{overflow:hidden}
+a{color:inherit;text-decoration:none}
+button,input{font:inherit}
+button{cursor:pointer}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
+
+:focus-visible{outline:3px solid rgba(159,214,220,.9);outline-offset:3px;border-radius:5px}
