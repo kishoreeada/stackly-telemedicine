@@ -1,155 +1,730 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="#f5fafb" name="theme-color"/>
-<title>Stackly — Doctors you can trust</title>
-<meta content="Meet Stackly's verified doctors and find a specialist who fits your needs, schedule and care journey." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
-<link href="../css/variables.css" rel="stylesheet"/>
-<link href="../css/header.css" rel="stylesheet"/>
-<link href="../css/footer.css" rel="stylesheet"/>
-<link href="../css/doctors.css" rel="stylesheet"/>
-</head>
-<body data-page="doctors">
-<header class="site-header" data-header="">
-<div class="header-inner">
-<a aria-label="Stackly home" class="brand" href="../index.html"><span class="brand-lockup"><img alt="" aria-hidden="true" src="../assets/stackly-logo.svg"/></span></a>
-<nav aria-label="Primary navigation" class="primary-nav">
-<a data-nav="home" href="../index.html">Home</a><a data-nav="care" href="care.html">Care</a><a data-nav="doctors" href="doctors.html">Doctors</a><a data-nav="how-it-works" href="how-it-works.html">How it works</a><a data-nav="resources" href="resources.html">Resources</a>
-</nav>
-<div class="header-actions"><a class="login-link" href="auth/login.html">Log in</a><a class="signup-button" href="auth/signup.html">Sign up <span>↗</span></a></div>
-<button aria-controls="mobile-navigation" aria-expanded="false" aria-label="Open menu" class="menu-button" type="button"><span></span><span></span><span></span></button>
-</div>
-<div aria-hidden="true" class="mobile-navigation" id="mobile-navigation">
-<div class="mobile-navigation-inner">
-<div class="mobile-navigation-head"><a aria-label="Stackly home" class="brand" href="../index.html"><span class="brand-lockup"><img alt="" aria-hidden="true" src="../assets/stackly-logo.svg"/></span></a><button aria-label="Close menu" class="close-button" type="button"><span></span><span></span></button></div>
-<div class="mobile-navigation-content mobile-menu-clean"><p class="mobile-eyebrow">Navigation</p><nav aria-label="Mobile primary navigation"><a data-nav="home" href="../index.html">Home</a><a data-nav="care" href="care.html">Care</a><a data-nav="doctors" href="doctors.html">Doctors</a><a data-nav="how-it-works" href="how-it-works.html">How it works</a><a data-nav="resources" href="resources.html">Resources</a></nav><div class="mobile-actions"><a href="auth/signup.html">Sign up</a><a href="auth/login.html">Log in</a></div></div>
-</div>
-</div>
-</header>
-<main class="doctors-page">
-<!-- 01 / HERO -->
-<section class="doc-hero" id="top">
-<div class="doc-hero-grid">
-<div class="doc-hero-copy" data-aos="fade-up">
-<p class="doc-eyebrow"><span></span> VERIFIED PROFESSIONALS</p>
-<h1>Meet the people behind your <em>care.</em></h1>
-<p class="doc-hero-lede">Find a doctor by specialty, experience and availability — then keep the same context moving after the consultation.</p>
-<div class="doc-hero-actions"><a class="doc-button doc-button-primary" href="#directory">Find a specialist <span>↗</span></a><a class="doc-text-link" href="#standards"><span><i class="fa-solid fa-arrow-down"></i></span> How we verify</a></div>
-<div class="doc-proof-row"><span><i class="fa-solid fa-circle-check"></i> Verified profiles</span><span><i class="fa-solid fa-video"></i> Video ready</span><span><i class="fa-solid fa-clock"></i> Live availability</span></div>
-</div>
-<div class="doc-hero-visual" data-aos="fade-left" data-aos-delay="120">
-<div class="doc-hero-image-wrap"><img alt="Doctor in a white coat with stethoscope" loading="eager" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"/><div class="doc-image-wash"></div></div>
-<div class="doc-floating doc-floating-top"><i class="fa-solid fa-circle-check"></i><div><strong>Verified doctor</strong><small>Credentials reviewed</small></div></div>
-<div class="doc-floating doc-floating-bottom"><small>NEXT AVAILABLE</small><strong>Today · 5:45 PM</strong><span><i></i> Online now</span></div>
-<div class="doc-hero-label"><span>FEATURED</span><strong>Dr. Aarav Mehta</strong><small>Cardiology · 18 yrs experience</small></div>
-</div>
-</div>
-</section>
-<!-- 02 / DIRECTORY -->
-<section class="doc-directory" id="directory">
-<div class="doc-section-head" data-aos="fade-up"><div><p class="doc-eyebrow"><span></span> FIND YOUR FIT</p><h2>Specialists, without the <em>search fatigue.</em></h2></div><p>Start with the specialty you need. Every profile gives you the context to make a confident choice.</p></div>
-<div aria-label="Doctor specialties" class="doc-filters" data-aos="fade-up" data-aos-delay="80" role="group">
-<button class="doc-filter is-active" data-filter="all" type="button">All doctors</button><button class="doc-filter" data-filter="general" type="button">General care</button><button class="doc-filter" data-filter="cardiology" type="button">Cardiology</button><button class="doc-filter" data-filter="womens" type="button">Women's health</button><button class="doc-filter" data-filter="mental" type="button">Mental wellness</button><button class="doc-filter" data-filter="dermatology" type="button">Dermatology</button>
-</div>
-<div class="doc-grid" id="doctor-grid">
-<article class="doctor-card" data-aos="fade-up" data-aos-delay="60" data-specialty="general"><div class="doctor-card-media"><img alt="Female doctor in a white coat" loading="lazy" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/><span class="doctor-online"><i></i> Available today</span><button aria-label="Save Dr. Sarah Rao" class="doctor-save" type="button"><i class="fa-regular fa-bookmark"></i></button></div><div class="doctor-card-body"><div class="doctor-card-top"><span>GENERAL CARE</span><b>4.9 ★</b></div><h3>Dr. Sarah Rao</h3><p>Primary care · Preventive medicine</p><div class="doctor-meta"><span>14 yrs</span><span>1,800+ consults</span><span>English · Hindi</span></div><div class="doctor-card-actions"><a href="#spotlight">View profile <span>↗</span></a><button class="doctor-book" data-doctor="Dr. Sarah Rao" type="button">Book</button></div></div></article>
-<article class="doctor-card" data-aos="fade-up" data-aos-delay="110" data-specialty="cardiology"><div class="doctor-card-media"><img alt="Male doctor in a medical coat" loading="lazy" src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/><span class="doctor-online"><i></i> Available today</span><button aria-label="Save Dr. Michael Chen" class="doctor-save" type="button"><i class="fa-regular fa-bookmark"></i></button></div><div class="doctor-card-body"><div class="doctor-card-top"><span>CARDIOLOGY</span><b>4.9 ★</b></div><h3>Dr. Michael Chen</h3><p>Cardiology · Heart health</p><div class="doctor-meta"><span>16 yrs</span><span>2,140+ consults</span><span>English · Mandarin</span></div><div class="doctor-card-actions"><a href="#spotlight">View profile <span>↗</span></a><button class="doctor-book" data-doctor="Dr. Michael Chen" type="button">Book</button></div></div></article>
-<article class="doctor-card" data-aos="fade-up" data-aos-delay="160" data-specialty="womens"><div class="doctor-card-media"><img alt="Doctor in a bright clinical setting" loading="lazy" src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/><span class="doctor-online"><i></i> Online now</span><button aria-label="Save Dr. Emily Park" class="doctor-save" type="button"><i class="fa-regular fa-bookmark"></i></button></div><div class="doctor-card-body"><div class="doctor-card-top"><span>WOMEN'S HEALTH</span><b>4.8 ★</b></div><h3>Dr. Emily Park</h3><p>Women's health · Family medicine</p><div class="doctor-meta"><span>12 yrs</span><span>1,520+ consults</span><span>English · Korean</span></div><div class="doctor-card-actions"><a href="#spotlight">View profile <span>↗</span></a><button class="doctor-book" data-doctor="Dr. Emily Park" type="button">Book</button></div></div></article>
-<article class="doctor-card" data-aos="fade-up" data-aos-delay="210" data-specialty="mental"><div class="doctor-card-media"><img alt="Female physician portrait" loading="lazy" src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/><span class="doctor-online"><i></i> Available tomorrow</span><button aria-label="Save Dr. Maya Iyer" class="doctor-save" type="button"><i class="fa-regular fa-bookmark"></i></button></div><div class="doctor-card-body"><div class="doctor-card-top"><span>MENTAL WELLNESS</span><b>4.9 ★</b></div><h3>Dr. Maya Iyer</h3><p>Psychiatry · Behavioural health</p><div class="doctor-meta"><span>11 yrs</span><span>1,090+ consults</span><span>English · Tamil</span></div><div class="doctor-card-actions"><a href="#spotlight">View profile <span>↗</span></a><button class="doctor-book" data-doctor="Dr. Maya Iyer" type="button">Book</button></div></div></article>
-<article class="doctor-card" data-aos="fade-up" data-aos-delay="260" data-specialty="dermatology"><div class="doctor-card-media"><img alt="Doctor portrait in clinic" loading="lazy" src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/><span class="doctor-online"><i></i> Available today</span><button aria-label="Save Dr. Aisha Patel" class="doctor-save" type="button"><i class="fa-regular fa-bookmark"></i></button></div><div class="doctor-card-body"><div class="doctor-card-top"><span>DERMATOLOGY</span><b>4.9 ★</b></div><h3>Dr. Aisha Patel</h3><p>Dermatology · Skin health</p><div class="doctor-meta"><span>13 yrs</span><span>1,740+ consults</span><span>English · Gujarati</span></div><div class="doctor-card-actions"><a href="#spotlight">View profile <span>↗</span></a><button class="doctor-book" data-doctor="Dr. Aisha Patel" type="button">Book</button></div></div></article>
-<article class="doctor-card" data-aos="fade-up" data-aos-delay="310" data-specialty="general"><div class="doctor-card-media"><img alt="Doctor portrait with medical coat" loading="lazy" src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&amp;fit=crop&amp;w=800&amp;q=85"/><span class="doctor-online"><i></i> Available today</span><button aria-label="Save Dr. James Wilson" class="doctor-save" type="button"><i class="fa-regular fa-bookmark"></i></button></div><div class="doctor-card-body"><div class="doctor-card-top"><span>GENERAL CARE</span><b>4.8 ★</b></div><h3>Dr. James Wilson</h3><p>Family medicine · Chronic care</p><div class="doctor-meta"><span>17 yrs</span><span>2,300+ consults</span><span>English · Spanish</span></div><div class="doctor-card-actions"><a href="#spotlight">View profile <span>↗</span></a><button class="doctor-book" data-doctor="Dr. James Wilson" type="button">Book</button></div></div></article>
-</div>
-<div aria-live="polite" class="doc-directory-status" id="doctor-status">Showing all 6 specialists</div>
-</section>
-<!-- 03 / SPOTLIGHT -->
-<section class="doc-spotlight" id="spotlight">
-<div class="spotlight-visual" data-aos="fade-right"><div class="spotlight-profile-art"><div class="profile-art-grid"></div><span class="profile-art-label">PRIMARY CARE</span><div class="profile-art-avatar"><strong>SR</strong><span>MD</span></div><div class="profile-art-name"><b>Dr. Sarah Rao</b><span>Preventive medicine</span></div><div class="profile-art-status"><i></i> Available today</div></div><div class="spotlight-stat"><strong>4.9</strong><span>patient rating</span><i>★★★★★</i></div><div class="spotlight-orbit"></div></div>
-<div class="spotlight-copy" data-aos="fade-left"><p class="doc-eyebrow"><span></span> DOCTOR SPOTLIGHT</p><div class="spotlight-kicker"><span>01</span><span>PRIMARY CARE</span></div><h2>Expertise matters.<br/><em>Being heard matters more.</em></h2><p>Dr. Sarah Rao combines preventive medicine with practical everyday care. Her profile shows the details patients actually need before choosing a consultation.</p><div class="spotlight-credentials"><div><small>EXPERIENCE</small><strong>14 years</strong></div><div><small>CONSULTS</small><strong>1,800+</strong></div><div><small>NEXT SLOT</small><strong>Today · 5:45</strong></div></div><a class="doc-button doc-button-primary" href="auth/signup.html">Book with Dr. Rao <span>↗</span></a></div>
-</section>
-<!-- 04 / STANDARDS -->
-<section class="doc-standards" id="standards">
-<div class="standards-head" data-aos="fade-up"><p class="doc-eyebrow"><span></span> BEFORE YOU BOOK</p><h2>A doctor profile should answer the <em>important questions.</em></h2><p>We make the useful details visible up front, so choosing care feels considered rather than rushed.</p></div>
-<div class="standards-grid">
-<article class="standard-card standard-card-dark" data-aos="fade-up" data-aos-delay="70"><span class="standard-index">01</span><div class="standard-icon"><i class="fa-solid fa-user-shield"></i></div><h3>Verified credentials</h3><p>Professional details and profile information are reviewed before a doctor joins the network.</p><div class="standard-line"><span>PROFILE REVIEW</span><b>COMPLETE</b></div></article>
-<article class="standard-card" data-aos="fade-up" data-aos-delay="130"><span class="standard-index">02</span><div class="standard-icon"><i class="fa-solid fa-calendar-check"></i></div><h3>Real availability</h3><p>See practical appointment windows instead of guessing when a specialist might be free.</p><div class="standard-line"><span>AVAILABILITY</span><b>LIVE</b></div></article>
-<article class="standard-card" data-aos="fade-up" data-aos-delay="190"><span class="standard-index">03</span><div class="standard-icon"><i class="fa-solid fa-language"></i></div><h3>Useful context</h3><p>Specialties, experience, languages and consultation style help you choose with confidence.</p><div class="standard-line"><span>PROFILE DETAIL</span><b>VISIBLE</b></div></article>
-<article class="standard-card" data-aos="fade-up" data-aos-delay="250"><span class="standard-index">04</span><div class="standard-icon"><i class="fa-solid fa-link"></i></div><h3>Care that continues</h3><p>Appointments, prescriptions and follow-ups stay connected after the video call.</p><div class="standard-line"><span>FOLLOW-UP</span><b>CONNECTED</b></div></article>
-</div>
-</section>
-<!-- 05 / CLOSING CTA -->
-<section class="doc-close" id="book">
-<div class="doc-close-glow"></div><div class="doc-close-grid">
-<div class="doc-close-copy" data-aos="fade-up"><p class="doc-eyebrow"><span></span> YOUR NEXT STEP</p><h2>The right doctor can make the next step <em>feel lighter.</em></h2><p>Choose a specialist, see when they're available and start a connected care journey without the extra friction.</p><div class="doc-close-actions"><a class="doc-button doc-button-light" href="auth/signup.html">Find a doctor <span>↗</span></a><a class="doc-close-link" href="care.html">Explore care paths <span>↗</span></a></div></div>
-<div class="doc-close-panel" data-aos="fade-left" data-aos-delay="100"><div class="close-panel-top"><span>STACKLY NETWORK</span><b><i></i> 120+ specialists</b></div><div class="close-panel-orbit"><div class="close-dot d1"></div><div class="close-dot d2"></div><div class="close-dot d3"></div><div class="close-core"><i class="fa-solid fa-user-doctor"></i><strong>Care, connected.</strong><small>One next step at a time.</small></div></div><div class="close-panel-bottom"><span>4.9/5 average patient rating</span><span>Private by design</span></div></div>
-</div>
-</section>
-</main>
-<footer class="site-footer">
-<div class="footer-top">
-<div class="footer-brand-area">
-<a aria-label="Stackly home" class="footer-logo brand" href="../index.html"><span class="brand-lockup"><img alt="" aria-hidden="true" src="../assets/stackly-logo-white.svg"/></span></a>
-<p>Connected care, thoughtfully designed around real life — from the first question to what comes next.</p>
-<div aria-label="Social links" class="social-links">
-<a aria-label="Instagram" href="../404.html"><i class="fa-brands fa-instagram"></i></a>
-<a aria-label="LinkedIn" href="../404.html"><i class="fa-brands fa-linkedin-in"></i></a>
-<a aria-label="X" href="../404.html"><i class="fa-brands fa-x-twitter"></i></a>
-<a aria-label="YouTube" href="../404.html"><i class="fa-brands fa-youtube"></i></a>
-</div>
-</div>
-<div class="footer-nav-group">
-<p class="footer-label">Explore</p>
-<nav aria-label="Footer primary navigation">
-<a data-nav="home" href="../index.html"><span>Home</span></a>
-<a data-nav="care" href="care.html"><span>Care</span></a>
-<a aria-current="page" class="is-active" data-nav="doctors" href="doctors.html"><span>Doctors</span></a>
-<a data-nav="how-it-works" href="how-it-works.html"><span>How it works</span></a>
-<a data-nav="resources" href="resources.html"><span>Resources</span></a>
-</nav>
-</div>
-<div class="footer-nav-group">
-<p class="footer-label">Care</p>
-<nav aria-label="Care navigation">
-<a href="care.html#general">General care</a>
-<a href="care.html#womens-health">Women's health</a>
-<a href="care.html#chronic-care">Chronic care</a>
-<a href="care.html#mental-wellness">Mental wellness</a>
-<a href="doctors.html#standards">Doctor standards</a>
-</nav>
-</div>
-<div class="footer-connect">
-<p class="footer-label">Stay connected</p>
-<h2>Better care,<br/><i>without the extra friction.</i></h2>
-<p class="connect-copy">Practical health insights, care updates and useful resources — delivered thoughtfully.</p>
-<form class="newsletter" novalidate="">
-<label class="sr-only" for="doctor-newsletter-email">Email address</label>
-<input autocomplete="email" id="doctor-newsletter-email" placeholder="Your email address" required="" type="email"/>
-<button type="submit">Join ↗</button>
-<p aria-live="polite" class="newsletter-message" id="newsletter-message-doctors-1"></p>
-</form>
-<div class="contact">
-<a href="tel:+919876543210"><b><i class="fa-solid fa-phone"></i></b><span>+91 98765 43210</span></a>
-<a href="../404.html"><b><i class="fa-solid fa-location-dot"></i></b><span>Hyderabad, India</span></a>
-</div>
-</div>
-</div>
-<div class="footer-bottom">
-<span>© 2026 Stackly</span>
-<span class="bottom-note">Made for better care.</span>
-<div><a href="../404.html">Privacy</a><a href="../404.html">Terms</a></div>
-</div>
-</footer>
-<script src="../js/navigation.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="../js/doctors.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      name="viewport"
+    />
+    <meta content="#f5fafb" name="theme-color" />
+    <title>Stackly — Doctors you can trust</title>
+    <meta
+      content="Meet Stackly's verified doctors and find a specialist who fits your needs, schedule and care journey."
+      name="description"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="../css/variables.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/doctors.css" rel="stylesheet" />
+  </head>
+  <body data-page="doctors">
+    <header class="site-header" data-header="">
+      <div class="header-inner">
+        <a aria-label="Stackly home" class="brand" href="../index.html"
+          ><span class="brand-lockup"
+            ><img
+              alt=""
+              aria-hidden="true"
+              src="../assets/stackly-logo.svg" /></span
+        ></a>
+        <nav aria-label="Primary navigation" class="primary-nav">
+          <a data-nav="home" href="../index.html">Home</a
+          ><a data-nav="care" href="care.html">Care</a
+          ><a data-nav="doctors" href="doctors.html">Doctors</a
+          ><a data-nav="how-it-works" href="how-it-works.html">How it works</a
+          ><a data-nav="resources" href="resources.html">Resources</a>
+        </nav>
+        <div class="header-actions">
+          <a class="login-link" href="auth/login.html">Log in</a
+          ><a class="signup-button" href="auth/signup.html"
+            >Sign up <span>↗</span></a
+          >
+        </div>
+        <button
+          aria-controls="mobile-navigation"
+          aria-expanded="false"
+          aria-label="Open menu"
+          class="menu-button"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div aria-hidden="true" class="mobile-navigation" id="mobile-navigation">
+        <div class="mobile-navigation-inner">
+          <div class="mobile-navigation-head">
+            <a aria-label="Stackly home" class="brand" href="../index.html"
+              ><span class="brand-lockup"
+                ><img
+                  alt=""
+                  aria-hidden="true"
+                  src="../assets/stackly-logo.svg" /></span></a
+            ><button aria-label="Close menu" class="close-button" type="button">
+              <span></span><span></span>
+            </button>
+          </div>
+          <div class="mobile-navigation-content mobile-menu-clean">
+            <p class="mobile-eyebrow">Navigation</p>
+            <nav aria-label="Mobile primary navigation">
+              <a data-nav="home" href="../index.html">Home</a
+              ><a data-nav="care" href="care.html">Care</a
+              ><a data-nav="doctors" href="doctors.html">Doctors</a
+              ><a data-nav="how-it-works" href="how-it-works.html"
+                >How it works</a
+              ><a data-nav="resources" href="resources.html">Resources</a>
+            </nav>
+            <div class="mobile-actions">
+              <a href="auth/signup.html">Sign up</a
+              ><a href="auth/login.html">Log in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="doctors-page">
+      <!-- 01 / HERO -->
+      <section class="doc-hero" id="top">
+        <div class="doc-hero-grid">
+          <div class="doc-hero-copy" data-aos="fade-up">
+            <p class="doc-eyebrow"><span></span> VERIFIED PROFESSIONALS</p>
+            <h1>Meet the people behind your <em>care.</em></h1>
+            <p class="doc-hero-lede">
+              Find a doctor by specialty, experience and availability — then
+              keep the same context moving after the consultation.
+            </p>
+            <div class="doc-hero-actions">
+              <a class="doc-button doc-button-primary" href="#directory"
+                >Find a specialist <span>↗</span></a
+              ><a class="doc-text-link" href="#standards"
+                ><span><i class="fa-solid fa-arrow-down"></i></span> How we
+                verify</a
+              >
+            </div>
+            <div class="doc-proof-row">
+              <span
+                ><i class="fa-solid fa-circle-check"></i> Verified
+                profiles</span
+              ><span><i class="fa-solid fa-video"></i> Video ready</span
+              ><span><i class="fa-solid fa-clock"></i> Live availability</span>
+            </div>
+          </div>
+          <div
+            class="doc-hero-visual"
+            data-aos="fade-left"
+            data-aos-delay="120"
+          >
+            <div class="doc-hero-image-wrap">
+              <img
+                alt="Doctor in a white coat with stethoscope"
+                loading="eager"
+                src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&amp;fit=crop&amp;w=1100&amp;q=85"
+              />
+              <div class="doc-image-wash"></div>
+            </div>
+            <div class="doc-floating doc-floating-top">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <strong>Verified doctor</strong
+                ><small>Credentials reviewed</small>
+              </div>
+            </div>
+            <div class="doc-floating doc-floating-bottom">
+              <small>NEXT AVAILABLE</small><strong>Today · 5:45 PM</strong
+              ><span><i></i> Online now</span>
+            </div>
+            <div class="doc-hero-label">
+              <span>FEATURED</span><strong>Dr. Aarav Mehta</strong
+              ><small>Cardiology · 18 yrs experience</small>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 02 / DIRECTORY -->
+      <section class="doc-directory" id="directory">
+        <div class="doc-section-head" data-aos="fade-up">
+          <div>
+            <p class="doc-eyebrow"><span></span> FIND YOUR FIT</p>
+            <h2>Specialists, without the <em>search fatigue.</em></h2>
+          </div>
+          <p>
+            Start with the specialty you need. Every profile gives you the
+            context to make a confident choice.
+          </p>
+        </div>
+        <div
+          aria-label="Doctor specialties"
+          class="doc-filters"
+          data-aos="fade-up"
+          data-aos-delay="80"
+          role="group"
+        >
+          <button class="doc-filter is-active" data-filter="all" type="button">
+            All doctors</button
+          ><button class="doc-filter" data-filter="general" type="button">
+            General care</button
+          ><button class="doc-filter" data-filter="cardiology" type="button">
+            Cardiology</button
+          ><button class="doc-filter" data-filter="womens" type="button">
+            Women's health</button
+          ><button class="doc-filter" data-filter="mental" type="button">
+            Mental wellness</button
+          ><button class="doc-filter" data-filter="dermatology" type="button">
+            Dermatology
+          </button>
+        </div>
+        <div class="doc-grid" id="doctor-grid">
+          <article
+            class="doctor-card"
+            data-aos="fade-up"
+            data-aos-delay="60"
+            data-specialty="general"
+          >
+            <div class="doctor-card-media">
+              <img
+                alt="Female doctor in a white coat"
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              /><span class="doctor-online"><i></i> Available today</span
+              ><button
+                aria-label="Save Dr. Sarah Rao"
+                class="doctor-save"
+                type="button"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="doctor-card-body">
+              <div class="doctor-card-top">
+                <span>GENERAL CARE</span><b>4.9 ★</b>
+              </div>
+              <h3>Dr. Sarah Rao</h3>
+              <p>Primary care · Preventive medicine</p>
+              <div class="doctor-meta">
+                <span>14 yrs</span><span>1,800+ consults</span
+                ><span>English · Hindi</span>
+              </div>
+              <div class="doctor-card-actions">
+                <a href="#spotlight">View profile <span>↗</span></a
+                ><button
+                  class="doctor-book"
+                  data-doctor="Dr. Sarah Rao"
+                  type="button"
+                >
+                  Book
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="doctor-card"
+            data-aos="fade-up"
+            data-aos-delay="110"
+            data-specialty="cardiology"
+          >
+            <div class="doctor-card-media">
+              <img
+                alt="Male doctor in a medical coat"
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              /><span class="doctor-online"><i></i> Available today</span
+              ><button
+                aria-label="Save Dr. Michael Chen"
+                class="doctor-save"
+                type="button"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="doctor-card-body">
+              <div class="doctor-card-top">
+                <span>CARDIOLOGY</span><b>4.9 ★</b>
+              </div>
+              <h3>Dr. Michael Chen</h3>
+              <p>Cardiology · Heart health</p>
+              <div class="doctor-meta">
+                <span>16 yrs</span><span>2,140+ consults</span
+                ><span>English · Mandarin</span>
+              </div>
+              <div class="doctor-card-actions">
+                <a href="#spotlight">View profile <span>↗</span></a
+                ><button
+                  class="doctor-book"
+                  data-doctor="Dr. Michael Chen"
+                  type="button"
+                >
+                  Book
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="doctor-card"
+            data-aos="fade-up"
+            data-aos-delay="160"
+            data-specialty="womens"
+          >
+            <div class="doctor-card-media">
+              <img
+                alt="Doctor in a bright clinical setting"
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              /><span class="doctor-online"><i></i> Online now</span
+              ><button
+                aria-label="Save Dr. Emily Park"
+                class="doctor-save"
+                type="button"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="doctor-card-body">
+              <div class="doctor-card-top">
+                <span>WOMEN'S HEALTH</span><b>4.8 ★</b>
+              </div>
+              <h3>Dr. Emily Park</h3>
+              <p>Women's health · Family medicine</p>
+              <div class="doctor-meta">
+                <span>12 yrs</span><span>1,520+ consults</span
+                ><span>English · Korean</span>
+              </div>
+              <div class="doctor-card-actions">
+                <a href="#spotlight">View profile <span>↗</span></a
+                ><button
+                  class="doctor-book"
+                  data-doctor="Dr. Emily Park"
+                  type="button"
+                >
+                  Book
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="doctor-card"
+            data-aos="fade-up"
+            data-aos-delay="210"
+            data-specialty="mental"
+          >
+            <div class="doctor-card-media">
+              <img
+                alt="Female physician portrait"
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              /><span class="doctor-online"><i></i> Available tomorrow</span
+              ><button
+                aria-label="Save Dr. Maya Iyer"
+                class="doctor-save"
+                type="button"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="doctor-card-body">
+              <div class="doctor-card-top">
+                <span>MENTAL WELLNESS</span><b>4.9 ★</b>
+              </div>
+              <h3>Dr. Maya Iyer</h3>
+              <p>Psychiatry · Behavioural health</p>
+              <div class="doctor-meta">
+                <span>11 yrs</span><span>1,090+ consults</span
+                ><span>English · Tamil</span>
+              </div>
+              <div class="doctor-card-actions">
+                <a href="#spotlight">View profile <span>↗</span></a
+                ><button
+                  class="doctor-book"
+                  data-doctor="Dr. Maya Iyer"
+                  type="button"
+                >
+                  Book
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="doctor-card"
+            data-aos="fade-up"
+            data-aos-delay="260"
+            data-specialty="dermatology"
+          >
+            <div class="doctor-card-media">
+              <img
+                alt="Doctor portrait in clinic"
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              /><span class="doctor-online"><i></i> Available today</span
+              ><button
+                aria-label="Save Dr. Aisha Patel"
+                class="doctor-save"
+                type="button"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="doctor-card-body">
+              <div class="doctor-card-top">
+                <span>DERMATOLOGY</span><b>4.9 ★</b>
+              </div>
+              <h3>Dr. Aisha Patel</h3>
+              <p>Dermatology · Skin health</p>
+              <div class="doctor-meta">
+                <span>13 yrs</span><span>1,740+ consults</span
+                ><span>English · Gujarati</span>
+              </div>
+              <div class="doctor-card-actions">
+                <a href="#spotlight">View profile <span>↗</span></a
+                ><button
+                  class="doctor-book"
+                  data-doctor="Dr. Aisha Patel"
+                  type="button"
+                >
+                  Book
+                </button>
+              </div>
+            </div>
+          </article>
+          <article
+            class="doctor-card"
+            data-aos="fade-up"
+            data-aos-delay="310"
+            data-specialty="general"
+          >
+            <div class="doctor-card-media">
+              <img
+                alt="Doctor portrait with medical coat"
+                loading="lazy"
+                src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?auto=format&amp;fit=crop&amp;w=800&amp;q=85"
+              /><span class="doctor-online"><i></i> Available today</span
+              ><button
+                aria-label="Save Dr. James Wilson"
+                class="doctor-save"
+                type="button"
+              >
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="doctor-card-body">
+              <div class="doctor-card-top">
+                <span>GENERAL CARE</span><b>4.8 ★</b>
+              </div>
+              <h3>Dr. James Wilson</h3>
+              <p>Family medicine · Chronic care</p>
+              <div class="doctor-meta">
+                <span>17 yrs</span><span>2,300+ consults</span
+                ><span>English · Spanish</span>
+              </div>
+              <div class="doctor-card-actions">
+                <a href="#spotlight">View profile <span>↗</span></a
+                ><button
+                  class="doctor-book"
+                  data-doctor="Dr. James Wilson"
+                  type="button"
+                >
+                  Book
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div aria-live="polite" class="doc-directory-status" id="doctor-status">
+          Showing all 6 specialists
+        </div>
+      </section>
+      <!-- 03 / SPOTLIGHT -->
+      <section class="doc-spotlight" id="spotlight">
+        <div class="spotlight-visual" data-aos="fade-right">
+          <div class="spotlight-profile-art">
+            <div class="profile-art-grid"></div>
+            <span class="profile-art-label">PRIMARY CARE</span>
+            <div class="profile-art-avatar">
+              <strong>SR</strong><span>MD</span>
+            </div>
+            <div class="profile-art-name">
+              <b>Dr. Sarah Rao</b><span>Preventive medicine</span>
+            </div>
+            <div class="profile-art-status"><i></i> Available today</div>
+          </div>
+          <div class="spotlight-stat">
+            <strong>4.9</strong><span>patient rating</span><i>★★★★★</i>
+          </div>
+          <div class="spotlight-orbit"></div>
+        </div>
+        <div class="spotlight-copy" data-aos="fade-left">
+          <p class="doc-eyebrow"><span></span> DOCTOR SPOTLIGHT</p>
+          <div class="spotlight-kicker">
+            <span>01</span><span>PRIMARY CARE</span>
+          </div>
+          <h2>Expertise matters.<br /><em>Being heard matters more.</em></h2>
+          <p>
+            Dr. Sarah Rao combines preventive medicine with practical everyday
+            care. Her profile shows the details patients actually need before
+            choosing a consultation.
+          </p>
+          <div class="spotlight-credentials">
+            <div><small>EXPERIENCE</small><strong>14 years</strong></div>
+            <div><small>CONSULTS</small><strong>1,800+</strong></div>
+            <div><small>NEXT SLOT</small><strong>Today · 5:45</strong></div>
+          </div>
+          <a class="doc-button doc-button-primary" href="auth/signup.html"
+            >Book with Dr. Rao <span>↗</span></a
+          >
+        </div>
+      </section>
+      <!-- 04 / STANDARDS -->
+      <section class="doc-standards" id="standards">
+        <div class="standards-head" data-aos="fade-up">
+          <p class="doc-eyebrow"><span></span> BEFORE YOU BOOK</p>
+          <h2>
+            A doctor profile should answer the <em>important questions.</em>
+          </h2>
+          <p>
+            We make the useful details visible up front, so choosing care feels
+            considered rather than rushed.
+          </p>
+        </div>
+        <div class="standards-grid">
+          <article
+            class="standard-card standard-card-dark"
+            data-aos="fade-up"
+            data-aos-delay="70"
+          >
+            <span class="standard-index">01</span>
+            <div class="standard-icon">
+              <i class="fa-solid fa-user-shield"></i>
+            </div>
+            <h3>Verified credentials</h3>
+            <p>
+              Professional details and profile information are reviewed before a
+              doctor joins the network.
+            </p>
+            <div class="standard-line">
+              <span>PROFILE REVIEW</span><b>COMPLETE</b>
+            </div>
+          </article>
+          <article
+            class="standard-card"
+            data-aos="fade-up"
+            data-aos-delay="130"
+          >
+            <span class="standard-index">02</span>
+            <div class="standard-icon">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <h3>Real availability</h3>
+            <p>
+              See practical appointment windows instead of guessing when a
+              specialist might be free.
+            </p>
+            <div class="standard-line">
+              <span>AVAILABILITY</span><b>LIVE</b>
+            </div>
+          </article>
+          <article
+            class="standard-card"
+            data-aos="fade-up"
+            data-aos-delay="190"
+          >
+            <span class="standard-index">03</span>
+            <div class="standard-icon">
+              <i class="fa-solid fa-language"></i>
+            </div>
+            <h3>Useful context</h3>
+            <p>
+              Specialties, experience, languages and consultation style help you
+              choose with confidence.
+            </p>
+            <div class="standard-line">
+              <span>PROFILE DETAIL</span><b>VISIBLE</b>
+            </div>
+          </article>
+          <article
+            class="standard-card"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <span class="standard-index">04</span>
+            <div class="standard-icon"><i class="fa-solid fa-link"></i></div>
+            <h3>Care that continues</h3>
+            <p>
+              Appointments, prescriptions and follow-ups stay connected after
+              the video call.
+            </p>
+            <div class="standard-line">
+              <span>FOLLOW-UP</span><b>CONNECTED</b>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 05 / CLOSING CTA -->
+      <section class="doc-close" id="book">
+        <div class="doc-close-glow"></div>
+        <div class="doc-close-grid">
+          <div class="doc-close-copy" data-aos="fade-up">
+            <p class="doc-eyebrow"><span></span> YOUR NEXT STEP</p>
+            <h2>
+              The right doctor can make the next step <em>feel lighter.</em>
+            </h2>
+            <p>
+              Choose a specialist, see when they're available and start a
+              connected care journey without the extra friction.
+            </p>
+            <div class="doc-close-actions">
+              <a class="doc-button doc-button-light" href="auth/signup.html"
+                >Find a doctor <span>↗</span></a
+              ><a class="doc-close-link" href="care.html"
+                >Explore care paths <span>↗</span></a
+              >
+            </div>
+          </div>
+          <div
+            class="doc-close-panel"
+            data-aos="fade-left"
+            data-aos-delay="100"
+          >
+            <div class="close-panel-top">
+              <span>STACKLY NETWORK</span><b><i></i> 120+ specialists</b>
+            </div>
+            <div class="close-panel-orbit">
+              <div class="close-dot d1"></div>
+              <div class="close-dot d2"></div>
+              <div class="close-dot d3"></div>
+              <div class="close-core">
+                <i class="fa-solid fa-user-doctor"></i
+                ><strong>Care, connected.</strong
+                ><small>One next step at a time.</small>
+              </div>
+            </div>
+            <div class="close-panel-bottom">
+              <span>4.9/5 average patient rating</span
+              ><span>Private by design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand-area">
+          <a
+            aria-label="Stackly home"
+            class="footer-logo brand"
+            href="../index.html"
+            ><span class="brand-lockup"
+              ><img
+                alt=""
+                aria-hidden="true"
+                src="../assets/stackly-logo-white.svg" /></span
+          ></a>
+          <p>
+            Connected care, thoughtfully designed around real life — from the
+            first question to what comes next.
+          </p>
+          <div aria-label="Social links" class="social-links">
+            <a aria-label="Instagram" href="../404.html"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a aria-label="LinkedIn" href="../404.html"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a aria-label="X" href="../404.html"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+            <a aria-label="YouTube" href="../404.html"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-nav-group">
+          <p class="footer-label">Explore</p>
+          <nav aria-label="Footer primary navigation">
+            <a data-nav="home" href="../index.html"><span>Home</span></a>
+            <a data-nav="care" href="care.html"><span>Care</span></a>
+            <a
+              aria-current="page"
+              class="is-active"
+              data-nav="doctors"
+              href="doctors.html"
+              ><span>Doctors</span></a
+            >
+            <a data-nav="how-it-works" href="how-it-works.html"
+              ><span>How it works</span></a
+            >
+            <a data-nav="resources" href="resources.html"
+              ><span>Resources</span></a
+            >
+          </nav>
+        </div>
+        <div class="footer-nav-group">
+          <p class="footer-label">Care</p>
+          <nav aria-label="Care navigation">
+            <a href="care.html#general">General care</a>
+            <a href="care.html#womens-health">Women's health</a>
+            <a href="care.html#chronic-care">Chronic care</a>
+            <a href="care.html#mental-wellness">Mental wellness</a>
+            <a href="doctors.html#standards">Doctor standards</a>
+          </nav>
+        </div>
+        <div class="footer-connect">
+          <p class="footer-label">Stay connected</p>
+          <h2>Better care,<br /><i>without the extra friction.</i></h2>
+          <p class="connect-copy">
+            Practical health insights, care updates and useful resources —
+            delivered thoughtfully.
+          </p>
+          <form class="newsletter" novalidate="">
+            <label class="sr-only" for="doctor-newsletter-email"
+              >Email address</label
+            >
+            <input
+              autocomplete="email"
+              id="doctor-newsletter-email"
+              placeholder="Your email address"
+              required=""
+              type="email"
+            />
+            <button type="submit">Join ↗</button>
+            <p
+              aria-live="polite"
+              class="newsletter-message"
+              id="newsletter-message-doctors-1"
+            ></p>
+          </form>
+          <div class="contact">
+            <a href="../404.html"
+              ><b><i class="fa-solid fa-phone"></i></b
+              ><span>+91 98765 43210</span></a
+            >
+            <a href="../404.html"
+              ><b><i class="fa-solid fa-location-dot"></i></b
+              ><span>Hyderabad, India</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Stackly</span>
+        <span class="bottom-note">Made for better care.</span>
+        <div>
+          <a href="../404.html">Privacy</a><a href="../404.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/navigation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="../js/doctors.js"></script>
+  </body>
 </html>

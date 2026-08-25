@@ -5,11 +5,14 @@
   const closeButton = document.querySelector(".close-button");
   const page = document.body.dataset.page || "home";
 
-  document.querySelectorAll(`[data-nav="${page}"]`).forEach(link => link.classList.add("is-active"));
+  document
+    .querySelectorAll(`[data-nav="${page}"]`)
+    .forEach((link) => link.classList.add("is-active"));
 
-  const onScroll = () => header?.classList.toggle("is-scrolled", window.scrollY > 14);
+  const onScroll = () =>
+    header?.classList.toggle("is-scrolled", window.scrollY > 14);
   onScroll();
-  window.addEventListener("scroll", onScroll, {passive:true});
+  window.addEventListener("scroll", onScroll, { passive: true });
 
   const toggleMenu = (open) => {
     if (!menu || !openButton) return;
@@ -21,21 +24,23 @@
 
   openButton?.addEventListener("click", () => toggleMenu(true));
   closeButton?.addEventListener("click", () => toggleMenu(false));
-  menu?.querySelectorAll("a").forEach(a => a.addEventListener("click", () => toggleMenu(false)));
+  menu
+    ?.querySelectorAll("a")
+    .forEach((a) => a.addEventListener("click", () => toggleMenu(false)));
 
-  document.addEventListener("keydown", e => {
+  document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") toggleMenu(false);
   });
 
-
   // Published-site safety: never leave a user on a dead '#' placeholder.
-  document.querySelectorAll('a[href="#"]').forEach(link => {
-    link.href = (window.location.pathname.includes('/pages/') ? '../' : '') + '404.html';
+  document.querySelectorAll('a[href="#"]').forEach((link) => {
+    link.href =
+      (window.location.pathname.includes("/pages/") ? "../" : "") + "404.html";
   });
 
   // Newsletter forms: only a valid email is accepted. Invalid input is
   // clearly highlighted; valid input intentionally routes to the single 404 page.
-  document.querySelectorAll(".newsletter").forEach(form => {
+  document.querySelectorAll(".newsletter").forEach((form) => {
     const email = form.querySelector('input[type="email"]');
     if (!email) return;
 
@@ -75,19 +80,29 @@
 
     clearError();
 
-    form.addEventListener("submit", event => {
+    form.addEventListener("submit", (event) => {
       event.preventDefault();
       const value = email.value.trim();
       const valid = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i.test(value);
 
       if (!valid) {
-        setError(value ? "Please enter a valid email address." : "Please enter your email address.");
+        setError(
+          value
+            ? "Please enter a valid email address."
+            : "Please enter your email address.",
+        );
         email.focus({ preventScroll: true });
         return;
       }
 
       clearError();
-      const target = window.location.pathname.includes("/pages/") ? "../404.html" : "404.html";
+
+      // Clear newsletter input before navigation
+      form.reset();
+
+      const target = window.location.pathname.includes("/pages/")
+        ? "../404.html"
+        : "404.html";
       window.location.assign(target);
     });
 

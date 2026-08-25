@@ -1,132 +1,695 @@
-<!DOCTYPE html>
+<!doctype html>
 
 <html lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<meta content="#f5fafb" name="theme-color"/>
-<title>Stackly — Resources</title>
-<meta content="Practical health guides, answers and connected-care resources from Stackly." name="description"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
-<link href="../css/variables.css" rel="stylesheet"/>
-<link href="../css/header.css" rel="stylesheet"/>
-<link href="../css/footer.css" rel="stylesheet"/>
-<link href="../css/resources.css" rel="stylesheet"/>
-</head>
-<body data-page="resources">
-<header class="site-header" data-header="">
-<div class="header-inner">
-<a aria-label="Stackly home" class="brand" href="../index.html"><span class="brand-lockup"><img alt="" aria-hidden="true" src="../assets/stackly-logo.svg"/></span></a>
-<nav aria-label="Primary navigation" class="primary-nav">
-<a data-nav="home" href="../index.html">Home</a><a data-nav="care" href="care.html">Care</a><a data-nav="doctors" href="doctors.html">Doctors</a><a data-nav="how-it-works" href="how-it-works.html">How it works</a><a data-nav="resources" href="resources.html">Resources</a>
-</nav>
-<div class="header-actions"><a class="login-link" href="auth/login.html">Log in</a><a class="signup-button" href="auth/signup.html">Sign up <span>↗</span></a></div>
-<button aria-controls="mobile-navigation" aria-expanded="false" aria-label="Open menu" class="menu-button" type="button"><span></span><span></span><span></span></button>
-</div>
-<div aria-hidden="true" class="mobile-navigation" id="mobile-navigation">
-<div class="mobile-navigation-inner">
-<div class="mobile-navigation-head"><a aria-label="Stackly home" class="brand" href="../index.html"><span class="brand-lockup"><img alt="" aria-hidden="true" src="../assets/stackly-logo.svg"/></span></a><button aria-label="Close menu" class="close-button" type="button"><span></span><span></span></button></div>
-<div class="mobile-navigation-content mobile-menu-clean"><p class="mobile-eyebrow">Navigation</p><nav aria-label="Mobile primary navigation"><a data-nav="home" href="../index.html">Home</a><a data-nav="care" href="care.html">Care</a><a data-nav="doctors" href="doctors.html">Doctors</a><a data-nav="how-it-works" href="how-it-works.html">How it works</a><a data-nav="resources" href="resources.html">Resources</a></nav><div class="mobile-actions"><a href="auth/signup.html">Sign up</a><a href="auth/login.html">Log in</a></div></div>
-</div>
-</div>
-</header>
-<main class="resources-page">
-<!-- 01 / HERO -->
-<section class="resources-hero" id="top">
-<div class="resource-hero-copy" data-aos="fade-up">
-<p class="resource-eyebrow"><span></span> THE RESOURCE ROOM</p>
-<h1>Care is easier<br/>when <em>the next answer</em><br/>is close.</h1>
-<p class="resource-hero-lede">Practical guides, clear explanations and useful health reads — made to help you understand what matters before and after a consultation.</p>
-<div class="resource-search" role="search">
-<i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
-<input aria-label="Search resources" id="resource-search" placeholder="Search guides, topics or questions" type="search"/>
-<button id="hero-search-button" type="button">Search</button>
-</div>
-<div aria-label="Popular topics" class="hero-topics"><button data-filter-jump="general" type="button">General care</button><button data-filter-jump="wellness" type="button">Wellness</button><button data-filter-jump="mental" type="button">Mental wellness</button><button data-filter-jump="preventive" type="button">Prevention</button></div>
-</div>
-<div class="resource-hero-visual" data-aos="fade-left" data-aos-delay="120">
-<div class="hero-image-frame"><img alt="Patient using a telemedicine consultation from home" src="../assets/hero-telemedicine.webp"/><div class="hero-image-overlay"></div><span class="hero-image-label"><i class="fa-solid fa-circle-check"></i> A calmer way to prepare</span></div>
-<div class="hero-floating-note note-one"><small>READ · 06 MIN</small><b>What to expect from a video consultation</b><span>→</span></div>
-<div class="hero-floating-note note-two"><i class="fa-solid fa-book-open"></i><span>120+ practical resources</span></div>
-<div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
-</div>
-</section>
-<!-- 02 / FEATURED GUIDES -->
-<section class="resource-featured" id="featured">
-<div class="section-intro" data-aos="fade-up"><div class="section-intro-main"><p class="resource-eyebrow"><span></span> FEATURED GUIDES</p><h2>Start with something<br/><em>worth your time.</em></h2></div><p>Short enough to read today. Useful enough to come back to later.</p></div>
-<div class="featured-layout">
-<article class="featured-main" data-aos="fade-right">
-<div class="featured-main-media featured-guide-visual"><div class="guide-window"><div class="guide-window-top"><span></span><span></span><span></span><b>VISIT PREP</b></div><div class="guide-window-body"><div class="guide-window-kicker">BEFORE YOUR CONSULTATION</div><strong>Bring the right<br/><em>questions with you.</em></strong><div class="guide-checks"><span><i class="fa-solid fa-check"></i> Main question</span><span><i class="fa-solid fa-check"></i> Current medicines</span><span><i class="fa-solid fa-check"></i> Follow-up notes</span></div></div></div><div class="guide-orbit guide-orbit-one"></div><div class="guide-orbit guide-orbit-two"></div><span class="featured-visual-label">EDITOR'S PICK</span><button aria-label="Save featured guide" type="button"><i class="fa-regular fa-bookmark"></i></button></div>
-<div class="featured-main-body"><div class="resource-meta"><span>GENERAL CARE</span><span>06 MIN READ</span></div><h3>How to make the most of your next telemedicine visit</h3><p>A simple preparation checklist for getting your questions, symptoms and follow-up details into one clear conversation.</p><a class="resource-link" href="../404.html">Read guide <span>↗</span></a></div>
-</article>
-<div class="featured-side">
-<article class="featured-small" data-aos="fade-left" data-aos-delay="80"><div class="small-visual visual-blue"><i class="fa-solid fa-heart-pulse"></i><span>01</span></div><div><div class="resource-meta"><span>PREVENTIVE</span><span>04 MIN</span></div><h3>Small health checks that are easy to postpone</h3><p>A practical reset for the things worth keeping on your calendar.</p><a href="../404.html">Read <span>↗</span></a></div></article>
-<article class="featured-small" data-aos="fade-left" data-aos-delay="150"><div class="small-visual visual-mint"><i class="fa-solid fa-brain"></i><span>02</span></div><div><div class="resource-meta"><span>MENTAL WELLNESS</span><span>05 MIN</span></div><h3>When “I’m fine” is not the whole story</h3><p>Useful signs that it may be time to slow down and ask for support.</p><a href="../404.html">Read <span>↗</span></a></div></article>
-<article class="featured-small" data-aos="fade-left" data-aos-delay="220"><div class="small-visual visual-sand"><i class="fa-solid fa-shield-heart"></i><span>03</span></div><div><div class="resource-meta"><span>WELLNESS</span><span>03 MIN</span></div><h3>Build a routine you can actually keep</h3><p>Less perfection, more repeatable habits that fit around real life.</p><a href="../404.html">Read <span>↗</span></a></div></article>
-</div>
-</div>
-</section>
-<!-- 03 / LIBRARY -->
-<section class="resource-library" id="library">
-<div class="library-head" data-aos="fade-up"><div><p class="resource-eyebrow"><span></span> CARE LIBRARY</p><h2>Find the useful<br/><em>bit faster.</em></h2></div><p>Browse by topic or search for a specific question. Results update instantly without leaving the page.</p></div>
-<div class="library-controls" data-aos="fade-up" data-aos-delay="60"><div aria-label="Resource categories" class="library-filters" role="tablist"><button aria-selected="true" class="is-active" data-filter="all" role="tab" type="button">All</button><button aria-selected="false" data-filter="general" role="tab" type="button">General care</button><button aria-selected="false" data-filter="wellness" role="tab" type="button">Wellness</button><button aria-selected="false" data-filter="mental" role="tab" type="button">Mental wellness</button><button aria-selected="false" data-filter="preventive" role="tab" type="button">Prevention</button></div><span class="library-count" id="library-count">06 resources</span></div>
-<div class="library-grid" id="resource-grid">
-<article class="library-card" data-category="general" data-search="video consultation telemedicine prepare doctor appointment"><div class="card-index">01</div><div class="library-art art-phone"><span>09:42</span><i class="fa-solid fa-video"></i><b>Ready to meet</b></div><div class="library-card-body"><div class="resource-meta"><span>GENERAL CARE</span><span>06 MIN</span></div><h3>What happens during a video consultation?</h3><p>Know what to prepare, what to ask and what comes after.</p><a href="../404.html">Open guide <span>↗</span></a></div></article>
-<article class="library-card" data-category="wellness" data-search="wellness routine habits sleep energy daily health"><div class="card-index">02</div><div class="library-art art-orbit"><i class="fa-solid fa-moon"></i><span>SMALL STEPS</span></div><div class="library-card-body"><div class="resource-meta"><span>WELLNESS</span><span>05 MIN</span></div><h3>Design a routine that survives busy weeks</h3><p>Simple habits work better when they fit the life you already have.</p><a href="../404.html">Open guide <span>↗</span></a></div></article>
-<article class="library-card" data-category="mental" data-search="mental wellness stress anxiety support emotional wellbeing"><div class="card-index">03</div><div class="library-art art-wave"><i class="fa-solid fa-brain"></i><span>PAUSE / NOTICE / ACT</span></div><div class="library-card-body"><div class="resource-meta"><span>MENTAL WELLNESS</span><span>07 MIN</span></div><h3>How to notice when stress is becoming too much</h3><p>Practical signals and supportive next steps, without alarmism.</p><a href="../404.html">Open guide <span>↗</span></a></div></article>
-<article class="library-card" data-category="preventive" data-search="preventive health checkups screening calendar prevention"><div class="card-index">04</div><div class="library-art art-check"><i class="fa-solid fa-list-check"></i><span>CHECK / PLAN / KEEP</span></div><div class="library-card-body"><div class="resource-meta"><span>PREVENTIVE</span><span>04 MIN</span></div><h3>The health checks worth keeping on your radar</h3><p>A clearer way to think about routine preventive care.</p><a href="../404.html">Open guide <span>↗</span></a></div></article>
-<article class="library-card" data-category="general" data-search="prescription medication follow up notes after consultation care"><div class="card-index">05</div><div class="library-art art-note"><i class="fa-solid fa-file-prescription"></i><span>FOLLOW-UP</span></div><div class="library-card-body"><div class="resource-meta"><span>GENERAL CARE</span><span>05 MIN</span></div><h3>What to keep after an appointment</h3><p>Notes, prescriptions and follow-ups that make the next step easier.</p><a href="../404.html">Open guide <span>↗</span></a></div></article>
-<article class="library-card" data-category="wellness" data-search="nutrition hydration movement healthy lifestyle wellbeing"><div class="card-index">06</div><div class="library-art art-sun"><i class="fa-solid fa-seedling"></i><span>REAL LIFE HEALTH</span></div><div class="library-card-body"><div class="resource-meta"><span>WELLNESS</span><span>03 MIN</span></div><h3>Healthier days without the all-or-nothing plan</h3><p>Make the useful choice easier to repeat than the perfect one.</p><a href="../404.html">Open guide <span>↗</span></a></div></article>
-</div>
-<p class="library-empty" hidden="" id="library-empty">No resources match that search. Try a broader topic.</p>
-</section>
-<!-- 04 / ANSWERS -->
-<section class="resource-answers" id="answers">
-<div aria-hidden="true" class="answers-rail"><span></span><i></i><i></i><i></i></div>
-<div class="answers-intro" data-aos="fade-right">
-<p class="resource-eyebrow"><span></span> PRACTICAL ANSWERS</p>
-<h2>One question<br/>at a <em>time.</em></h2>
-<p>Not every health question needs a long article. These quick answers keep the useful part close.</p>
-<span class="answers-note"><i class="fa-solid fa-arrow-down"></i> Tap a question to open</span>
-<div aria-label="Practical answers summary" class="answers-summary">
-<div class="answers-summary-top"><span>QUICK REFERENCE</span><i aria-hidden="true" class="fa-solid fa-sparkles"></i></div>
-<strong>Four useful answers.<br/><em>No long detours.</em></strong>
-<div class="answers-summary-stats"><span><b>04</b> questions</span><span><b>02</b> min reads</span></div>
-</div>
-</div>
-<div class="answers-list" data-aos="fade-left">
-<div aria-expanded="true" class="answer-item is-open" role="button" tabindex="0"><span>01</span><strong>How should I prepare for a video consultation?</strong><i class="fa-solid fa-plus"></i><div class="answer-panel">Keep your main question, current medicines and any recent changes nearby. A quiet, well-lit place and a reliable connection are usually enough.</div></div>
-<div aria-expanded="false" class="answer-item" role="button" tabindex="0"><span>02</span><strong>What should I ask when I’m not sure what kind of care I need?</strong><i class="fa-solid fa-plus"></i><div class="answer-panel">Start with what is changing, how long it has been happening and what you want help deciding. A care professional can guide the next step from there.</div></div>
-<div aria-expanded="false" class="answer-item" role="button" tabindex="0"><span>03</span><strong>What should I keep after a consultation?</strong><i class="fa-solid fa-plus"></i><div class="answer-panel">Keep the plan, prescriptions, follow-up timing and any questions that still need an answer. The goal is to make the next conversation easier.</div></div>
-<div aria-expanded="false" class="answer-item" role="button" tabindex="0"><span>04</span><strong>When should I reach out instead of waiting?</strong><i class="fa-solid fa-plus"></i><div class="answer-panel">If something is worsening, feels unusual for you or is affecting daily life, it is reasonable to ask for professional guidance rather than waiting for it to pass.</div></div>
-</div>
-</section>
-<!-- 05 / CTA -->
-<section class="resource-cta" id="stay-connected">
-<div class="cta-orbit cta-orbit-a"></div><div class="cta-orbit cta-orbit-b"></div><div class="cta-glow"></div>
-<div class="cta-copy" data-aos="fade-up"><p class="resource-eyebrow"><span></span> STAY CONNECTED</p><h2>Useful care insights.<br/><em>Delivered thoughtfully.</em></h2><p>Get practical guides, new resources and care updates without filling your inbox with noise.</p><form class="resource-newsletter newsletter" novalidate=""><label class="sr-only" for="resource-email">Email address</label><input autocomplete="email" id="resource-email" placeholder="Your email address" required="" type="email"/><button type="submit">Join ↗</button><p aria-live="polite" class="resource-newsletter-message newsletter-message" id="resource-newsletter-message"></p></form><span class="cta-small"><i class="fa-solid fa-shield-halved"></i> No spam. Unsubscribe anytime.</span></div>
-<div class="cta-card" data-aos="fade-left" data-aos-delay="120"><span class="cta-card-label">THIS MONTH</span><strong>6</strong><p>new practical reads</p><div><span>General care</span><span>Wellness</span><span>Prevention</span></div><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
-</section>
-</main>
-<footer class="site-footer">
-<div class="footer-top">
-<div class="footer-brand-area"><a aria-label="Stackly home" class="footer-logo brand" href="../index.html"><span class="brand-lockup"><img alt="" aria-hidden="true" src="../assets/stackly-logo-white.svg"/></span></a><p>Connected care, thoughtfully designed around real life — from the first question to what comes next.</p><div aria-label="Social links" class="social-links"><a aria-label="Instagram" href="../404.html"><i class="fa-brands fa-instagram"></i></a><a aria-label="LinkedIn" href="../404.html"><i class="fa-brands fa-linkedin-in"></i></a><a aria-label="X" href="../404.html"><i class="fa-brands fa-x-twitter"></i></a><a aria-label="YouTube" href="../404.html"><i class="fa-brands fa-youtube"></i></a></div></div>
-<div class="footer-nav-group"><p class="footer-label">Explore</p><nav aria-label="Footer primary navigation"><a data-nav="home" href="../index.html"><span>Home</span></a><a data-nav="care" href="care.html"><span>Care</span></a><a data-nav="doctors" href="doctors.html"><span>Doctors</span></a><a data-nav="how-it-works" href="how-it-works.html"><span>How it works</span></a><a data-nav="resources" href="resources.html"><span>Resources</span></a></nav></div>
-<div class="footer-nav-group"><p class="footer-label">Care</p><nav aria-label="Care navigation"><a href="care.html#general">General care</a><a href="care.html#womens-health">Women's health</a><a href="care.html#chronic-care">Chronic care</a><a href="care.html#mental-wellness">Mental wellness</a><a href="doctors.html#standards">Doctor standards</a></nav></div>
-<div class="footer-connect"><p class="footer-label">Stay connected</p><h2>Better care,<br/><i>without the extra friction.</i></h2><p class="connect-copy">Practical health insights, care updates and useful resources — delivered thoughtfully.</p><form class="newsletter" novalidate=""><label class="sr-only" for="email">Email address</label><input autocomplete="email" id="email" placeholder="Your email address" required="" type="email"/><button type="submit">Join ↗</button>
-<p aria-live="polite" class="newsletter-message" id="newsletter-message-resources-1"></p>
-</form><div class="contact"><a href="tel:+919876543210"><b><i class="fa-solid fa-phone"></i></b><span>+91 98765 43210</span></a><a href="../404.html"><b><i class="fa-solid fa-location-dot"></i></b><span>Hyderabad, India</span></a></div></div>
-</div>
-<div class="footer-bottom"><span>© 2026 Stackly</span><span class="bottom-note">Made for better care.</span><div><a href="../404.html">Privacy</a><a href="../404.html">Terms</a></div></div>
-</footer>
-<script src="../js/navigation.js"></script>
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="../js/resources.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+      name="viewport"
+    />
+    <meta content="#f5fafb" name="theme-color" />
+    <title>Stackly — Resources</title>
+    <meta
+      content="Practical health guides, answers and connected-care resources from Stackly."
+      name="description"
+    />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Manrope:wght@500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="../css/variables.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/resources.css" rel="stylesheet" />
+  </head>
+  <body data-page="resources">
+    <header class="site-header" data-header="">
+      <div class="header-inner">
+        <a aria-label="Stackly home" class="brand" href="../index.html"
+          ><span class="brand-lockup"
+            ><img
+              alt=""
+              aria-hidden="true"
+              src="../assets/stackly-logo.svg" /></span
+        ></a>
+        <nav aria-label="Primary navigation" class="primary-nav">
+          <a data-nav="home" href="../index.html">Home</a
+          ><a data-nav="care" href="care.html">Care</a
+          ><a data-nav="doctors" href="doctors.html">Doctors</a
+          ><a data-nav="how-it-works" href="how-it-works.html">How it works</a
+          ><a data-nav="resources" href="resources.html">Resources</a>
+        </nav>
+        <div class="header-actions">
+          <a class="login-link" href="auth/login.html">Log in</a
+          ><a class="signup-button" href="auth/signup.html"
+            >Sign up <span>↗</span></a
+          >
+        </div>
+        <button
+          aria-controls="mobile-navigation"
+          aria-expanded="false"
+          aria-label="Open menu"
+          class="menu-button"
+          type="button"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      <div aria-hidden="true" class="mobile-navigation" id="mobile-navigation">
+        <div class="mobile-navigation-inner">
+          <div class="mobile-navigation-head">
+            <a aria-label="Stackly home" class="brand" href="../index.html"
+              ><span class="brand-lockup"
+                ><img
+                  alt=""
+                  aria-hidden="true"
+                  src="../assets/stackly-logo.svg" /></span></a
+            ><button aria-label="Close menu" class="close-button" type="button">
+              <span></span><span></span>
+            </button>
+          </div>
+          <div class="mobile-navigation-content mobile-menu-clean">
+            <p class="mobile-eyebrow">Navigation</p>
+            <nav aria-label="Mobile primary navigation">
+              <a data-nav="home" href="../index.html">Home</a
+              ><a data-nav="care" href="care.html">Care</a
+              ><a data-nav="doctors" href="doctors.html">Doctors</a
+              ><a data-nav="how-it-works" href="how-it-works.html"
+                >How it works</a
+              ><a data-nav="resources" href="resources.html">Resources</a>
+            </nav>
+            <div class="mobile-actions">
+              <a href="auth/signup.html">Sign up</a
+              ><a href="auth/login.html">Log in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="resources-page">
+      <!-- 01 / HERO -->
+      <section class="resources-hero" id="top">
+        <div class="resource-hero-copy" data-aos="fade-up">
+          <p class="resource-eyebrow"><span></span> THE RESOURCE ROOM</p>
+          <h1>
+            Care is easier<br />when <em>the next answer</em><br />is close.
+          </h1>
+          <p class="resource-hero-lede">
+            Practical guides, clear explanations and useful health reads — made
+            to help you understand what matters before and after a consultation.
+          </p>
+          <div class="resource-search" role="search">
+            <i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
+            <input
+              aria-label="Search resources"
+              id="resource-search"
+              placeholder="Search guides, topics or questions"
+              type="search"
+            />
+            <button id="hero-search-button" type="button">Search</button>
+          </div>
+          <div aria-label="Popular topics" class="hero-topics">
+            <button data-filter-jump="general" type="button">
+              General care</button
+            ><button data-filter-jump="wellness" type="button">Wellness</button
+            ><button data-filter-jump="mental" type="button">
+              Mental wellness</button
+            ><button data-filter-jump="preventive" type="button">
+              Prevention
+            </button>
+          </div>
+        </div>
+        <div
+          class="resource-hero-visual"
+          data-aos="fade-left"
+          data-aos-delay="120"
+        >
+          <div class="hero-image-frame">
+            <img
+              alt="Patient using a telemedicine consultation from home"
+              src="../assets/hero-telemedicine.webp"
+            />
+            <div class="hero-image-overlay"></div>
+            <span class="hero-image-label"
+              ><i class="fa-solid fa-circle-check"></i> A calmer way to
+              prepare</span
+            >
+          </div>
+          <div class="hero-floating-note note-one">
+            <small>READ · 06 MIN</small
+            ><b>What to expect from a video consultation</b><span>→</span>
+          </div>
+          <div class="hero-floating-note note-two">
+            <i class="fa-solid fa-book-open"></i
+            ><span>120+ practical resources</span>
+          </div>
+          <div class="hero-orbit orbit-one"></div>
+          <div class="hero-orbit orbit-two"></div>
+        </div>
+      </section>
+      <!-- 02 / FEATURED GUIDES -->
+      <section class="resource-featured" id="featured">
+        <div class="section-intro" data-aos="fade-up">
+          <div class="section-intro-main">
+            <p class="resource-eyebrow"><span></span> FEATURED GUIDES</p>
+            <h2>Start with something<br /><em>worth your time.</em></h2>
+          </div>
+          <p>
+            Short enough to read today. Useful enough to come back to later.
+          </p>
+        </div>
+        <div class="featured-layout">
+          <article class="featured-main" data-aos="fade-right">
+            <div class="featured-main-media featured-guide-visual">
+              <div class="guide-window">
+                <div class="guide-window-top">
+                  <span></span><span></span><span></span><b>VISIT PREP</b>
+                </div>
+                <div class="guide-window-body">
+                  <div class="guide-window-kicker">
+                    BEFORE YOUR CONSULTATION
+                  </div>
+                  <strong
+                    >Bring the right<br /><em>questions with you.</em></strong
+                  >
+                  <div class="guide-checks">
+                    <span><i class="fa-solid fa-check"></i> Main question</span
+                    ><span
+                      ><i class="fa-solid fa-check"></i> Current medicines</span
+                    ><span
+                      ><i class="fa-solid fa-check"></i> Follow-up notes</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="guide-orbit guide-orbit-one"></div>
+              <div class="guide-orbit guide-orbit-two"></div>
+              <span class="featured-visual-label">EDITOR'S PICK</span
+              ><button aria-label="Save featured guide" type="button">
+                <i class="fa-regular fa-bookmark"></i>
+              </button>
+            </div>
+            <div class="featured-main-body">
+              <div class="resource-meta">
+                <span>GENERAL CARE</span><span>06 MIN READ</span>
+              </div>
+              <h3>How to make the most of your next telemedicine visit</h3>
+              <p>
+                A simple preparation checklist for getting your questions,
+                symptoms and follow-up details into one clear conversation.
+              </p>
+              <a class="resource-link" href="../404.html"
+                >Read guide <span>↗</span></a
+              >
+            </div>
+          </article>
+          <div class="featured-side">
+            <article
+              class="featured-small"
+              data-aos="fade-left"
+              data-aos-delay="80"
+            >
+              <div class="small-visual visual-blue">
+                <i class="fa-solid fa-heart-pulse"></i><span>01</span>
+              </div>
+              <div>
+                <div class="resource-meta">
+                  <span>PREVENTIVE</span><span>04 MIN</span>
+                </div>
+                <h3>Small health checks that are easy to postpone</h3>
+                <p>
+                  A practical reset for the things worth keeping on your
+                  calendar.
+                </p>
+                <a href="../404.html">Read <span>↗</span></a>
+              </div>
+            </article>
+            <article
+              class="featured-small"
+              data-aos="fade-left"
+              data-aos-delay="150"
+            >
+              <div class="small-visual visual-mint">
+                <i class="fa-solid fa-brain"></i><span>02</span>
+              </div>
+              <div>
+                <div class="resource-meta">
+                  <span>MENTAL WELLNESS</span><span>05 MIN</span>
+                </div>
+                <h3>When “I’m fine” is not the whole story</h3>
+                <p>
+                  Useful signs that it may be time to slow down and ask for
+                  support.
+                </p>
+                <a href="../404.html">Read <span>↗</span></a>
+              </div>
+            </article>
+            <article
+              class="featured-small"
+              data-aos="fade-left"
+              data-aos-delay="220"
+            >
+              <div class="small-visual visual-sand">
+                <i class="fa-solid fa-shield-heart"></i><span>03</span>
+              </div>
+              <div>
+                <div class="resource-meta">
+                  <span>WELLNESS</span><span>03 MIN</span>
+                </div>
+                <h3>Build a routine you can actually keep</h3>
+                <p>
+                  Less perfection, more repeatable habits that fit around real
+                  life.
+                </p>
+                <a href="../404.html">Read <span>↗</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- 03 / LIBRARY -->
+      <section class="resource-library" id="library">
+        <div class="library-head" data-aos="fade-up">
+          <div>
+            <p class="resource-eyebrow"><span></span> CARE LIBRARY</p>
+            <h2>Find the useful<br /><em>bit faster.</em></h2>
+          </div>
+          <p>
+            Browse by topic or search for a specific question. Results update
+            instantly without leaving the page.
+          </p>
+        </div>
+        <div class="library-controls" data-aos="fade-up" data-aos-delay="60">
+          <div
+            aria-label="Resource categories"
+            class="library-filters"
+            role="tablist"
+          >
+            <button
+              aria-selected="true"
+              class="is-active"
+              data-filter="all"
+              role="tab"
+              type="button"
+            >
+              All</button
+            ><button
+              aria-selected="false"
+              data-filter="general"
+              role="tab"
+              type="button"
+            >
+              General care</button
+            ><button
+              aria-selected="false"
+              data-filter="wellness"
+              role="tab"
+              type="button"
+            >
+              Wellness</button
+            ><button
+              aria-selected="false"
+              data-filter="mental"
+              role="tab"
+              type="button"
+            >
+              Mental wellness</button
+            ><button
+              aria-selected="false"
+              data-filter="preventive"
+              role="tab"
+              type="button"
+            >
+              Prevention
+            </button>
+          </div>
+          <span class="library-count" id="library-count">06 resources</span>
+        </div>
+        <div class="library-grid" id="resource-grid">
+          <article
+            class="library-card"
+            data-category="general"
+            data-search="video consultation telemedicine prepare doctor appointment"
+          >
+            <div class="card-index">01</div>
+            <div class="library-art art-phone">
+              <span>09:42</span><i class="fa-solid fa-video"></i
+              ><b>Ready to meet</b>
+            </div>
+            <div class="library-card-body">
+              <div class="resource-meta">
+                <span>GENERAL CARE</span><span>06 MIN</span>
+              </div>
+              <h3>What happens during a video consultation?</h3>
+              <p>Know what to prepare, what to ask and what comes after.</p>
+              <a href="../404.html">Open guide <span>↗</span></a>
+            </div>
+          </article>
+          <article
+            class="library-card"
+            data-category="wellness"
+            data-search="wellness routine habits sleep energy daily health"
+          >
+            <div class="card-index">02</div>
+            <div class="library-art art-orbit">
+              <i class="fa-solid fa-moon"></i><span>SMALL STEPS</span>
+            </div>
+            <div class="library-card-body">
+              <div class="resource-meta">
+                <span>WELLNESS</span><span>05 MIN</span>
+              </div>
+              <h3>Design a routine that survives busy weeks</h3>
+              <p>
+                Simple habits work better when they fit the life you already
+                have.
+              </p>
+              <a href="../404.html">Open guide <span>↗</span></a>
+            </div>
+          </article>
+          <article
+            class="library-card"
+            data-category="mental"
+            data-search="mental wellness stress anxiety support emotional wellbeing"
+          >
+            <div class="card-index">03</div>
+            <div class="library-art art-wave">
+              <i class="fa-solid fa-brain"></i><span>PAUSE / NOTICE / ACT</span>
+            </div>
+            <div class="library-card-body">
+              <div class="resource-meta">
+                <span>MENTAL WELLNESS</span><span>07 MIN</span>
+              </div>
+              <h3>How to notice when stress is becoming too much</h3>
+              <p>
+                Practical signals and supportive next steps, without alarmism.
+              </p>
+              <a href="../404.html">Open guide <span>↗</span></a>
+            </div>
+          </article>
+          <article
+            class="library-card"
+            data-category="preventive"
+            data-search="preventive health checkups screening calendar prevention"
+          >
+            <div class="card-index">04</div>
+            <div class="library-art art-check">
+              <i class="fa-solid fa-list-check"></i
+              ><span>CHECK / PLAN / KEEP</span>
+            </div>
+            <div class="library-card-body">
+              <div class="resource-meta">
+                <span>PREVENTIVE</span><span>04 MIN</span>
+              </div>
+              <h3>The health checks worth keeping on your radar</h3>
+              <p>A clearer way to think about routine preventive care.</p>
+              <a href="../404.html">Open guide <span>↗</span></a>
+            </div>
+          </article>
+          <article
+            class="library-card"
+            data-category="general"
+            data-search="prescription medication follow up notes after consultation care"
+          >
+            <div class="card-index">05</div>
+            <div class="library-art art-note">
+              <i class="fa-solid fa-file-prescription"></i
+              ><span>FOLLOW-UP</span>
+            </div>
+            <div class="library-card-body">
+              <div class="resource-meta">
+                <span>GENERAL CARE</span><span>05 MIN</span>
+              </div>
+              <h3>What to keep after an appointment</h3>
+              <p>
+                Notes, prescriptions and follow-ups that make the next step
+                easier.
+              </p>
+              <a href="../404.html">Open guide <span>↗</span></a>
+            </div>
+          </article>
+          <article
+            class="library-card"
+            data-category="wellness"
+            data-search="nutrition hydration movement healthy lifestyle wellbeing"
+          >
+            <div class="card-index">06</div>
+            <div class="library-art art-sun">
+              <i class="fa-solid fa-seedling"></i><span>REAL LIFE HEALTH</span>
+            </div>
+            <div class="library-card-body">
+              <div class="resource-meta">
+                <span>WELLNESS</span><span>03 MIN</span>
+              </div>
+              <h3>Healthier days without the all-or-nothing plan</h3>
+              <p>
+                Make the useful choice easier to repeat than the perfect one.
+              </p>
+              <a href="../404.html">Open guide <span>↗</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="library-empty" hidden="" id="library-empty">
+          No resources match that search. Try a broader topic.
+        </p>
+      </section>
+      <!-- 04 / ANSWERS -->
+      <section class="resource-answers" id="answers">
+        <div aria-hidden="true" class="answers-rail">
+          <span></span><i></i><i></i><i></i>
+        </div>
+        <div class="answers-intro" data-aos="fade-right">
+          <p class="resource-eyebrow"><span></span> PRACTICAL ANSWERS</p>
+          <h2>One question<br />at a <em>time.</em></h2>
+          <p>
+            Not every health question needs a long article. These quick answers
+            keep the useful part close.
+          </p>
+          <span class="answers-note"
+            ><i class="fa-solid fa-arrow-down"></i> Tap a question to open</span
+          >
+          <div aria-label="Practical answers summary" class="answers-summary">
+            <div class="answers-summary-top">
+              <span>QUICK REFERENCE</span
+              ><i aria-hidden="true" class="fa-solid fa-sparkles"></i>
+            </div>
+            <strong>Four useful answers.<br /><em>No long detours.</em></strong>
+            <div class="answers-summary-stats">
+              <span><b>04</b> questions</span><span><b>02</b> min reads</span>
+            </div>
+          </div>
+        </div>
+        <div class="answers-list" data-aos="fade-left">
+          <div
+            aria-expanded="true"
+            class="answer-item is-open"
+            role="button"
+            tabindex="0"
+          >
+            <span>01</span
+            ><strong>How should I prepare for a video consultation?</strong
+            ><i class="fa-solid fa-plus"></i>
+            <div class="answer-panel">
+              Keep your main question, current medicines and any recent changes
+              nearby. A quiet, well-lit place and a reliable connection are
+              usually enough.
+            </div>
+          </div>
+          <div
+            aria-expanded="false"
+            class="answer-item"
+            role="button"
+            tabindex="0"
+          >
+            <span>02</span
+            ><strong
+              >What should I ask when I’m not sure what kind of care I
+              need?</strong
+            ><i class="fa-solid fa-plus"></i>
+            <div class="answer-panel">
+              Start with what is changing, how long it has been happening and
+              what you want help deciding. A care professional can guide the
+              next step from there.
+            </div>
+          </div>
+          <div
+            aria-expanded="false"
+            class="answer-item"
+            role="button"
+            tabindex="0"
+          >
+            <span>03</span
+            ><strong>What should I keep after a consultation?</strong
+            ><i class="fa-solid fa-plus"></i>
+            <div class="answer-panel">
+              Keep the plan, prescriptions, follow-up timing and any questions
+              that still need an answer. The goal is to make the next
+              conversation easier.
+            </div>
+          </div>
+          <div
+            aria-expanded="false"
+            class="answer-item"
+            role="button"
+            tabindex="0"
+          >
+            <span>04</span
+            ><strong>When should I reach out instead of waiting?</strong
+            ><i class="fa-solid fa-plus"></i>
+            <div class="answer-panel">
+              If something is worsening, feels unusual for you or is affecting
+              daily life, it is reasonable to ask for professional guidance
+              rather than waiting for it to pass.
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 05 / CTA -->
+      <section class="resource-cta" id="stay-connected">
+        <div class="cta-orbit cta-orbit-a"></div>
+        <div class="cta-orbit cta-orbit-b"></div>
+        <div class="cta-glow"></div>
+        <div class="cta-copy" data-aos="fade-up">
+          <p class="resource-eyebrow"><span></span> STAY CONNECTED</p>
+          <h2>Useful care insights.<br /><em>Delivered thoughtfully.</em></h2>
+          <p>
+            Get practical guides, new resources and care updates without filling
+            your inbox with noise.
+          </p>
+          <form class="resource-newsletter newsletter" novalidate="">
+            <label class="sr-only" for="resource-email">Email address</label
+            ><input
+              autocomplete="email"
+              id="resource-email"
+              placeholder="Your email address"
+              required=""
+              type="email"
+            /><button type="submit">Join ↗</button>
+            <p
+              aria-live="polite"
+              class="resource-newsletter-message newsletter-message"
+              id="resource-newsletter-message"
+            ></p>
+          </form>
+          <span class="cta-small"
+            ><i class="fa-solid fa-shield-halved"></i> No spam. Unsubscribe
+            anytime.</span
+          >
+        </div>
+        <div class="cta-card" data-aos="fade-left" data-aos-delay="120">
+          <span class="cta-card-label">THIS MONTH</span><strong>6</strong>
+          <p>new practical reads</p>
+          <div>
+            <span>General care</span><span>Wellness</span
+            ><span>Prevention</span>
+          </div>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-brand-area">
+          <a
+            aria-label="Stackly home"
+            class="footer-logo brand"
+            href="../index.html"
+            ><span class="brand-lockup"
+              ><img
+                alt=""
+                aria-hidden="true"
+                src="../assets/stackly-logo-white.svg" /></span
+          ></a>
+          <p>
+            Connected care, thoughtfully designed around real life — from the
+            first question to what comes next.
+          </p>
+          <div aria-label="Social links" class="social-links">
+            <a aria-label="Instagram" href="../404.html"
+              ><i class="fa-brands fa-instagram"></i></a
+            ><a aria-label="LinkedIn" href="../404.html"
+              ><i class="fa-brands fa-linkedin-in"></i></a
+            ><a aria-label="X" href="../404.html"
+              ><i class="fa-brands fa-x-twitter"></i></a
+            ><a aria-label="YouTube" href="../404.html"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-nav-group">
+          <p class="footer-label">Explore</p>
+          <nav aria-label="Footer primary navigation">
+            <a data-nav="home" href="../index.html"><span>Home</span></a
+            ><a data-nav="care" href="care.html"><span>Care</span></a
+            ><a data-nav="doctors" href="doctors.html"><span>Doctors</span></a
+            ><a data-nav="how-it-works" href="how-it-works.html"
+              ><span>How it works</span></a
+            ><a data-nav="resources" href="resources.html"
+              ><span>Resources</span></a
+            >
+          </nav>
+        </div>
+        <div class="footer-nav-group">
+          <p class="footer-label">Care</p>
+          <nav aria-label="Care navigation">
+            <a href="care.html#general">General care</a
+            ><a href="care.html#womens-health">Women's health</a
+            ><a href="care.html#chronic-care">Chronic care</a
+            ><a href="care.html#mental-wellness">Mental wellness</a
+            ><a href="doctors.html#standards">Doctor standards</a>
+          </nav>
+        </div>
+        <div class="footer-connect">
+          <p class="footer-label">Stay connected</p>
+          <h2>Better care,<br /><i>without the extra friction.</i></h2>
+          <p class="connect-copy">
+            Practical health insights, care updates and useful resources —
+            delivered thoughtfully.
+          </p>
+          <form class="newsletter" novalidate="">
+            <label class="sr-only" for="email">Email address</label
+            ><input
+              autocomplete="email"
+              id="email"
+              placeholder="Your email address"
+              required=""
+              type="email"
+            /><button type="submit">Join ↗</button>
+            <p
+              aria-live="polite"
+              class="newsletter-message"
+              id="newsletter-message-resources-1"
+            ></p>
+          </form>
+          <div class="contact">
+            <a href="../404.html"
+              ><b><i class="fa-solid fa-phone"></i></b
+              ><span>+91 98765 43210</span></a
+            ><a href="../404.html"
+              ><b><i class="fa-solid fa-location-dot"></i></b
+              ><span>Hyderabad, India</span></a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Stackly</span
+        ><span class="bottom-note">Made for better care.</span>
+        <div>
+          <a href="../404.html">Privacy</a><a href="../404.html">Terms</a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/navigation.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="../js/resources.js"></script>
+  </body>
 </html>
