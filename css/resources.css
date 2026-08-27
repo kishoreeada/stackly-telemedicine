@@ -1384,7 +1384,7 @@
     padding-right: 8px;
   }
   .resource-search button {
-    width: 100%;
+    /* width: 100%; */
     margin: 0;
     height: 42px;
   }

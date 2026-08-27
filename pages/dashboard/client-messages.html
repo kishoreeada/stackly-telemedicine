@@ -1,7 +1,319 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width,initial-scale=1,viewport-fit=cover" name="viewport"/><meta content="#062d37" name="theme-color"/><title>Stackly — Messages</title><meta content="Stackly Messages dashboard." name="description"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"/><link href="dashboard.css" rel="stylesheet"/></head>
-<body><div class="dashboard-app" data-role="patient">
-<aside class="dashboard-sidebar"><div class="dashboard-sidebar-head"><a aria-label="Stackly home" class="dashboard-brand" href="../../index.html"><img alt="Stackly" src="../../assets/stackly-logo-white.svg"/></a><button aria-label="Close or collapse sidebar" class="dashboard-sidebar-close" data-sidebar-close=""><i class="fa-solid fa-xmark"></i></button></div><p class="dashboard-sidebar-label">My care</p><nav aria-label="Patient dashboard" class="dashboard-nav"><a class="" href="client.html"><i class="fa-solid fa-grid-2"></i><span>Overview</span></a><a class="" href="client-appointments.html"><i class="fa-regular fa-calendar"></i><span>Appointments</span></a><a class="" href="client-doctors.html"><i class="fa-solid fa-user-doctor"></i><span>My doctors</span></a><a class="" href="client-records.html"><i class="fa-regular fa-folder-open"></i><span>Health records</span></a><a class="is-active" href="client-messages.html"><i class="fa-regular fa-message"></i><span>Messages</span><span class="dashboard-pill">2</span></a><a class="" href="client-care-plan.html"><i class="fa-solid fa-route"></i><span>Care plan</span></a></nav><div class="dashboard-sidebar-bottom"><button class="dashboard-logout" data-logout=""><i class="fa-solid fa-arrow-right-from-bracket"></i><span>Log out</span></button></div></aside>
-<div class="dashboard-overlay"></div><main class="dashboard-main"><header class="dashboard-topbar"><div class="dashboard-top-left"><button aria-label="Open dashboard menu" class="dashboard-menu" data-menu-toggle=""><i class="fa-solid fa-bars"></i></button><div><p class="dashboard-page-kicker">Patient dashboard</p><p class="dashboard-page-title">Messages</p></div></div><div class="dashboard-top-actions"><div class="dashboard-profile" aria-label="Signed in user"><span class="dashboard-avatar" data-user-initials="">S</span><span class="dashboard-profile-email" data-user-email="">you@example.com</span></div></div></header>
-<div class="dashboard-content"><div class="dashboard-page-intro"><div><p class="dashboard-page-kicker">Patient dashboard</p><h1>Messages</h1><p class="dashboard-page-intro-copy">Questions, updates and follow-ups stay together so your care team can respond with the right context.</p></div><div class="dashboard-actions"><a class="dashboard-btn primary" href="client-appointments.html"><i class="fa-regular fa-calendar-plus"></i> Book a consultation</a><a class="dashboard-btn" href="client.html">Overview ↗</a></div></div><div class="dashboard-sections"><section class="dash-section"><div class="dash-section-head"><div><p class="dashboard-page-kicker">MESSAGES</p><h2 class="dash-section-title">Keep every care conversation in context.</h2><p class="dash-section-subtitle">Questions, updates and follow-ups stay together by care team.</p></div></div><div class="dash-section-body"><div class="metric-row"><article class="metric-card"><div class="metric-top"><span class="metric-icon"><i class="fa-regular fa-envelope"></i></span><span class="metric-note">New</span></div><strong class="metric-value">2</strong><p class="metric-label">Unread</p></article><article class="metric-card"><div class="metric-top"><span class="metric-icon"><i class="fa-solid fa-users"></i></span><span class="metric-note">Connected</span></div><strong class="metric-value">3</strong><p class="metric-label">Care teams</p></article><article class="metric-card"><div class="metric-top"><span class="metric-icon"><i class="fa-regular fa-clock"></i></span><span class="metric-note">Typical</span></div><strong class="metric-value">~2h</strong><p class="metric-label">Response time</p></article></div></div></section><section class="dash-section"><div class="dash-section-head"><div><p class="dashboard-page-kicker">INBOX</p><h2 class="dash-section-title">Your latest conversations.</h2><p class="dash-section-subtitle">Open a thread to continue where you left off.</p></div></div><div class="dash-section-body"><div class="data-list"><div class="data-row" data-searchable=""><span class="data-icon"><i class="fa-solid fa-user-doctor"></i></span><div class="data-copy"><strong>Dr. Aarav Mehta</strong><span>One question before today’s consultation.</span></div><div class="data-meta"><span class="status">Unread</span></div></div><div class="data-row" data-searchable=""><span class="data-icon"><i class="fa-solid fa-user-doctor"></i></span><div class="data-copy"><strong>Care coordination</strong><span>Your follow-up timeline has been updated.</span></div><div class="data-meta"><span class="status neutral">Read</span></div></div><div class="data-row" data-searchable=""><span class="data-icon"><i class="fa-solid fa-user-doctor"></i></span><div class="data-copy"><strong>Dr. Sarah Rao</strong><span>Tomorrow’s consultation details are ready.</span></div><div class="data-meta"><span class="status neutral">Read</span></div></div></div></div></section><section class="dash-section"><div class="dash-section-head"><div><p class="dashboard-page-kicker">START A CONVERSATION</p><h2 class="dash-section-title">Choose the right care context.</h2><p class="dash-section-subtitle">Send a message without losing the specialist or appointment it belongs to.</p></div></div><div class="dash-section-body"><div class="dash-grid three"><div class="dash-panel soft"><p class="dash-panel-kicker">Primary specialist</p><h3>Dr. Aarav Mehta</h3><p>Questions about your upcoming cardiology consultation.</p><a class="small-btn" href="client-messages.html">Message ↗</a></div><div class="dash-panel"><p class="dash-panel-kicker">Care coordination</p><h3>Care team</h3><p>Appointments, access and follow-up logistics.</p><a class="small-btn" href="client-messages.html">Message ↗</a></div><div class="dash-panel"><p class="dash-panel-kicker">Support</p><h3>Need a hand?</h3><p>Get help with access or next steps.</p><a class="small-btn" href="client-messages.html">Contact ↗</a></div></div></div></section><section class="dash-section"><div class="dash-section-head"><div><p class="dashboard-page-kicker">CONVERSATION GUIDANCE</p><h2 class="dash-section-title">Keep messages focused and useful.</h2><p class="dash-section-subtitle">Include the appointment, symptom or follow-up detail your care team needs to act quickly.</p></div></div><div class="dash-section-body"><div class="dash-panel soft"><div class="tag-row"><span class="tag">Appointment question</span><span class="tag">Medication update</span><span class="tag">Follow-up</span><span class="tag">Access help</span></div><p style="margin-top:14px">For urgent or emergency symptoms, use appropriate emergency care rather than waiting for a dashboard message response.</p></div></div></section></div></div></main><div aria-live="polite" class="dashboard-toast" role="status"></div><div aria-labelledby="modal-title" aria-modal="true" class="dashboard-modal" data-dashboard-modal="" role="dialog"><div class="dashboard-modal-card"><div class="dashboard-modal-head"><h2 id="modal-title">Schedule a consultation</h2><button aria-label="Close" class="dashboard-modal-close" data-close-modal=""><i class="fa-solid fa-xmark"></i></button></div><form class="dashboard-modal-form" data-modal-form=""><label>Specialty<select required=""><option>Cardiology</option><option>General care</option><option>Women's health</option><option>Wellness</option></select></label><label>Date<input required="" type="date"/></label><label>Time<select required=""><option>Morning</option><option>Afternoon</option><option>Evening</option></select></label><button class="dashboard-btn primary" type="submit">Continue ↗</button></form></div></div><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="dashboard.js"></script></div></body></html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+      name="viewport"
+    />
+    <meta content="#062d37" name="theme-color" />
+    <title>Stackly — Messages</title>
+    <meta content="Stackly Messages dashboard." name="description" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="dashboard.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="dashboard-app" data-role="patient">
+      <aside class="dashboard-sidebar">
+        <div class="dashboard-sidebar-head">
+          <a
+            aria-label="Stackly home"
+            class="dashboard-brand"
+            href="../../index.html"
+            ><img alt="Stackly" src="../../assets/stackly-logo-white.webp" /></a
+          ><button
+            aria-label="Close or collapse sidebar"
+            class="dashboard-sidebar-close"
+            data-sidebar-close=""
+          >
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <p class="dashboard-sidebar-label">My care</p>
+        <nav aria-label="Patient dashboard" class="dashboard-nav">
+          <a class="" href="client.html"
+            ><i class="fa-solid fa-grid-2"></i><span>Overview</span></a
+          ><a class="" href="client-appointments.html"
+            ><i class="fa-regular fa-calendar"></i><span>Appointments</span></a
+          ><a class="" href="client-doctors.html"
+            ><i class="fa-solid fa-user-doctor"></i><span>My doctors</span></a
+          ><a class="" href="client-records.html"
+            ><i class="fa-regular fa-folder-open"></i
+            ><span>Health records</span></a
+          ><a class="is-active" href="client-messages.html"
+            ><i class="fa-regular fa-message"></i><span>Messages</span
+            ><span class="dashboard-pill">2</span></a
+          ><a class="" href="client-care-plan.html"
+            ><i class="fa-solid fa-route"></i><span>Care plan</span></a
+          >
+        </nav>
+        <div class="dashboard-sidebar-bottom">
+          <button class="dashboard-logout" data-logout="">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i
+            ><span>Log out</span>
+          </button>
+        </div>
+      </aside>
+      <div class="dashboard-overlay"></div>
+      <main class="dashboard-main">
+        <header class="dashboard-topbar">
+          <div class="dashboard-top-left">
+            <button
+              aria-label="Open dashboard menu"
+              class="dashboard-menu"
+              data-menu-toggle=""
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+            <div>
+              <p class="dashboard-page-kicker">Patient dashboard</p>
+              <p class="dashboard-page-title">Messages</p>
+            </div>
+          </div>
+          <div class="dashboard-top-actions">
+            <div class="dashboard-profile" aria-label="Signed in user">
+              <span class="dashboard-avatar" data-user-initials="">S</span
+              ><span class="dashboard-profile-email" data-user-email=""
+                >you@example.com</span
+              >
+            </div>
+          </div>
+        </header>
+        <div class="dashboard-content">
+          <div class="dashboard-page-intro">
+            <div>
+              <p class="dashboard-page-kicker">Patient dashboard</p>
+              <h1>Messages</h1>
+              <p class="dashboard-page-intro-copy">
+                Questions, updates and follow-ups stay together so your care
+                team can respond with the right context.
+              </p>
+            </div>
+            <div class="dashboard-actions">
+              <a class="dashboard-btn primary" href="client-appointments.html"
+                ><i class="fa-regular fa-calendar-plus"></i> Book a
+                consultation</a
+              ><a class="dashboard-btn" href="client.html">Overview ↗</a>
+            </div>
+          </div>
+          <div class="dashboard-sections">
+            <section class="dash-section">
+              <div class="dash-section-head">
+                <div>
+                  <p class="dashboard-page-kicker">MESSAGES</p>
+                  <h2 class="dash-section-title">
+                    Keep every care conversation in context.
+                  </h2>
+                  <p class="dash-section-subtitle">
+                    Questions, updates and follow-ups stay together by care
+                    team.
+                  </p>
+                </div>
+              </div>
+              <div class="dash-section-body">
+                <div class="metric-row">
+                  <article class="metric-card">
+                    <div class="metric-top">
+                      <span class="metric-icon"
+                        ><i class="fa-regular fa-envelope"></i></span
+                      ><span class="metric-note">New</span>
+                    </div>
+                    <strong class="metric-value">2</strong>
+                    <p class="metric-label">Unread</p>
+                  </article>
+                  <article class="metric-card">
+                    <div class="metric-top">
+                      <span class="metric-icon"
+                        ><i class="fa-solid fa-users"></i></span
+                      ><span class="metric-note">Connected</span>
+                    </div>
+                    <strong class="metric-value">3</strong>
+                    <p class="metric-label">Care teams</p>
+                  </article>
+                  <article class="metric-card">
+                    <div class="metric-top">
+                      <span class="metric-icon"
+                        ><i class="fa-regular fa-clock"></i></span
+                      ><span class="metric-note">Typical</span>
+                    </div>
+                    <strong class="metric-value">~2h</strong>
+                    <p class="metric-label">Response time</p>
+                  </article>
+                </div>
+              </div>
+            </section>
+            <section class="dash-section">
+              <div class="dash-section-head">
+                <div>
+                  <p class="dashboard-page-kicker">INBOX</p>
+                  <h2 class="dash-section-title">Your latest conversations.</h2>
+                  <p class="dash-section-subtitle">
+                    Open a thread to continue where you left off.
+                  </p>
+                </div>
+              </div>
+              <div class="dash-section-body">
+                <div class="data-list">
+                  <div class="data-row" data-searchable="">
+                    <span class="data-icon"
+                      ><i class="fa-solid fa-user-doctor"></i
+                    ></span>
+                    <div class="data-copy">
+                      <strong>Dr. Aarav Mehta</strong
+                      ><span>One question before today’s consultation.</span>
+                    </div>
+                    <div class="data-meta">
+                      <span class="status">Unread</span>
+                    </div>
+                  </div>
+                  <div class="data-row" data-searchable="">
+                    <span class="data-icon"
+                      ><i class="fa-solid fa-user-doctor"></i
+                    ></span>
+                    <div class="data-copy">
+                      <strong>Care coordination</strong
+                      ><span>Your follow-up timeline has been updated.</span>
+                    </div>
+                    <div class="data-meta">
+                      <span class="status neutral">Read</span>
+                    </div>
+                  </div>
+                  <div class="data-row" data-searchable="">
+                    <span class="data-icon"
+                      ><i class="fa-solid fa-user-doctor"></i
+                    ></span>
+                    <div class="data-copy">
+                      <strong>Dr. Sarah Rao</strong
+                      ><span>Tomorrow’s consultation details are ready.</span>
+                    </div>
+                    <div class="data-meta">
+                      <span class="status neutral">Read</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="dash-section">
+              <div class="dash-section-head">
+                <div>
+                  <p class="dashboard-page-kicker">START A CONVERSATION</p>
+                  <h2 class="dash-section-title">
+                    Choose the right care context.
+                  </h2>
+                  <p class="dash-section-subtitle">
+                    Send a message without losing the specialist or appointment
+                    it belongs to.
+                  </p>
+                </div>
+              </div>
+              <div class="dash-section-body">
+                <div class="dash-grid three">
+                  <div class="dash-panel soft">
+                    <p class="dash-panel-kicker">Primary specialist</p>
+                    <h3>Dr. Aarav Mehta</h3>
+                    <p>
+                      Questions about your upcoming cardiology consultation.
+                    </p>
+                    <a class="small-btn" href="client-messages.html"
+                      >Message ↗</a
+                    >
+                  </div>
+                  <div class="dash-panel">
+                    <p class="dash-panel-kicker">Care coordination</p>
+                    <h3>Care team</h3>
+                    <p>Appointments, access and follow-up logistics.</p>
+                    <a class="small-btn" href="client-messages.html"
+                      >Message ↗</a
+                    >
+                  </div>
+                  <div class="dash-panel">
+                    <p class="dash-panel-kicker">Support</p>
+                    <h3>Need a hand?</h3>
+                    <p>Get help with access or next steps.</p>
+                    <a class="small-btn" href="client-messages.html"
+                      >Contact ↗</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="dash-section">
+              <div class="dash-section-head">
+                <div>
+                  <p class="dashboard-page-kicker">CONVERSATION GUIDANCE</p>
+                  <h2 class="dash-section-title">
+                    Keep messages focused and useful.
+                  </h2>
+                  <p class="dash-section-subtitle">
+                    Include the appointment, symptom or follow-up detail your
+                    care team needs to act quickly.
+                  </p>
+                </div>
+              </div>
+              <div class="dash-section-body">
+                <div class="dash-panel soft">
+                  <div class="tag-row">
+                    <span class="tag">Appointment question</span
+                    ><span class="tag">Medication update</span
+                    ><span class="tag">Follow-up</span
+                    ><span class="tag">Access help</span>
+                  </div>
+                  <p style="margin-top: 14px">
+                    For urgent or emergency symptoms, use appropriate emergency
+                    care rather than waiting for a dashboard message response.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
+      <div aria-live="polite" class="dashboard-toast" role="status"></div>
+      <div
+        aria-labelledby="modal-title"
+        aria-modal="true"
+        class="dashboard-modal"
+        data-dashboard-modal=""
+        role="dialog"
+      >
+        <div class="dashboard-modal-card">
+          <div class="dashboard-modal-head">
+            <h2 id="modal-title">Schedule a consultation</h2>
+            <button
+              aria-label="Close"
+              class="dashboard-modal-close"
+              data-close-modal=""
+            >
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <form class="dashboard-modal-form" data-modal-form="">
+            <label
+              >Specialty<select required="">
+                <option>Cardiology</option>
+                <option>General care</option>
+                <option>Women's health</option>
+                <option>Wellness</option>
+              </select></label
+            ><label>Date<input required="" type="date" /></label
+            ><label
+              >Time<select required="">
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+              </select></label
+            ><button class="dashboard-btn primary" type="submit">
+              Continue ↗
+            </button>
+          </form>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+      <script src="dashboard.js"></script>
+    </div>
+  </body>
+</html>
