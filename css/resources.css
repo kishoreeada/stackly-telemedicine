@@ -122,7 +122,7 @@
   border-radius: 16px;
   background: #fff;
   box-shadow: 0 18px 45px rgba(8, 47, 58, 0.08);
-  overflow: hidden;
+  overflow: visible;
   transition:
     border-color 0.25s var(--ease),
     box-shadow 0.25s var(--ease),
@@ -142,12 +142,13 @@
   min-width: 0;
   flex: 1;
   height: 100%;
-  padding: 0 15px;
-  border: 0;
-  outline: 0;
+  padding: 0 18px;
+  border: 0 !important;
+  outline: 0 !important;
   color: var(--ink);
   background: transparent;
   font-size: 14px;
+  box-shadow: none !important;
 }
 .resource-search input::placeholder {
   color: #91a5aa;
@@ -170,6 +171,35 @@
   transform: translateY(-1px);
   background: var(--teal-deep);
 }
+/* ********** */
+.resource-search {
+  position: relative;
+  margin-bottom: 38px;
+}
+
+.resource-search-error {
+  position: absolute;
+  left: 2px;
+  bottom: -28px;
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 600;
+  color: #d94b55;
+  display: block;
+}
+
+.resource-search-error[hidden] {
+  display: none;
+}
+
+#resource-search[aria-invalid="true"] {
+  outline: 2px solid rgba(217, 75, 85, 0.25);
+  outline-offset: 2px;
+}
+
+/* *********** */
 .hero-topics {
   display: flex;
   flex-wrap: wrap;
@@ -1623,5 +1653,54 @@
   }
   .answer-item:hover {
     padding-left: 0;
+  }
+}
+
+/* =========================================================
+   RESOURCE SEARCH — FINAL VALIDATION MESSAGE
+   ========================================================= */
+
+.resource-search {
+  position: relative;
+  margin-bottom: 42px;
+}
+
+.resource-search-error {
+  position: absolute;
+  left: 2px;
+  bottom: -30px;
+  margin: 0;
+  padding: 0;
+  width: max-content;
+  max-width: 100%;
+  color: #d94b55;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  z-index: 10;
+}
+
+.resource-search-error[hidden] {
+  display: none !important;
+}
+
+#resource-search[aria-invalid="true"] {
+  outline: 2px solid rgba(217, 75, 85, 0.16);
+  outline-offset: 1px;
+}
+
+/* Keep the validation message positioned correctly on mobile */
+@media (max-width: 560px) {
+  .resource-search {
+    margin-bottom: 42px;
+  }
+
+  .resource-search-error {
+    left: 4px;
+    bottom: -30px;
+    width: 100%;
+    max-width: calc(100% - 8px);
+    font-size: 11px;
   }
 }

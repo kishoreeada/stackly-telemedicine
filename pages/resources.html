@@ -107,13 +107,22 @@
           </p>
           <div class="resource-search" role="search">
             <i aria-hidden="true" class="fa-solid fa-magnifying-glass"></i>
+
             <input
               aria-label="Search resources"
               id="resource-search"
               placeholder="Search guides, topics or questions"
               type="search"
             />
+
             <button id="hero-search-button" type="button">Search</button>
+
+            <p
+              id="resource-search-error"
+              class="resource-search-error"
+              aria-live="polite"
+              hidden
+            ></p>
           </div>
           <div aria-label="Popular topics" class="hero-topics">
             <button data-filter-jump="general" type="button">
